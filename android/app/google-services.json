@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "298987247207",
+    "project_id": "takhaty-12b35",
+    "storage_bucket": "takhaty-12b35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298987247207:android:c3b7fccca4d4c0d4caa6c2",
+        "android_client_info": {
+          "package_name": "com.takhaty.app.takhaty"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1lU4_tc_QA96JNsF1Y7tEV2MmeJB5f-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
