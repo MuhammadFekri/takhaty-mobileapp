@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
 
 import 'core/helpers/bloc_observer.dart';
+import 'core/router/routes.dart';
 import 'core/services/connectivity/connectivity.dart';
 import 'core/services/network/local/cache_helper.dart';
 import 'firebase_options.dart';
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      onGenerateRoute: AppRouter().onGenerateRoute,
       home: const Scaffold(),
     );
   }
