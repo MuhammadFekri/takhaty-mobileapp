@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:takhaty/core/resources/colors_manager.dart';
 
+import 'core/constants/constants.dart';
 import 'core/helpers/bloc_observer.dart';
 import 'core/router/routes.dart';
 import 'core/services/connectivity/connectivity.dart';
@@ -52,9 +54,13 @@ class MyApp extends StatelessWidget {
         localizationsDelegates: context.localizationDelegates,
         supportedLocales: context.supportedLocales,
         locale: context.locale,
-        title: 'تخطي',
+        title: appName,
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          scaffoldBackgroundColor: ColorsManager.scaffoldBG,
+          colorScheme:
+              ColorScheme.fromSeed(seedColor: ColorsManager.primaryColor),
+          fontFamily: fontFamily,
           useMaterial3: true,
         ),
         onGenerateRoute: AppRouter().onGenerateRoute,

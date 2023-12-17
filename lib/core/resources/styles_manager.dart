@@ -5,8 +5,18 @@ class StylesManager {
   static const TextStyle textStyle16BlackRegular = TextStyle(
     color: ColorsManager.blackColor,
     fontSize: 16,
-    fontFamily: 'Tajawal',
     fontWeight: FontWeight.w400,
-    height: 0.06,
+  );
+
+  static const TextStyle textStyle40WhiteSemiBold = TextStyle(
+    color: Colors.white,
+    fontSize: 40,
+    fontWeight: FontWeight.w700,
+  );
+
+  static const TextStyle textStyle18White300 = TextStyle(
+    color: Colors.white,
+    fontSize: 18,
+    fontWeight: FontWeight.w300,
   );
 }
