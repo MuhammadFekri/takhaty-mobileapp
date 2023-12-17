@@ -57,6 +57,9 @@ dependencies:
   percent_indicator: ^4.2.3
   easy_localization: ^3.0.3
   webview_flutter: ^4.4.2
+  get_it: ^7.6.4
+
+
 
 dev_dependencies:
   flutter_test:
