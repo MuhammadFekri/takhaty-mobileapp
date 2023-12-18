@@ -4,5 +4,6 @@ class StringsManager {
   static String unknown = "غير معروف";
   static String checkInternet = "افحص اتصال الانترنت";
   static String welcome = "مرحباً";
+  static String skip = "تخطي";
   static String appSlogan = "الشبكة العربية لتخطى الضغوط وتحسين المزاج";
 }

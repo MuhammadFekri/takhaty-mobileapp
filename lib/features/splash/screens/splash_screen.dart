@@ -26,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   navigateToHome() async {
     await Future.delayed(const Duration(seconds: 5), () {
-      context.pushReplacement(AppRouter.homeScreen);
+      context.pushReplacement(AppRouter.onboardingScreen);
     });
   }
 
@@ -39,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
+          children: [
             SvgPicture.asset(ImagesManager.logo,
                 width: 45.w, color: Colors.white), //
             14.h.ph, // Your logo here
