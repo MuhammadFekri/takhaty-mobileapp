@@ -1,4 +1,3 @@
-import 'package:date_picker_timeline/extra/color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -91,8 +90,8 @@ class HomeScreen extends StatelessWidget {
               34.h.ph,
               GridView.count(
                 crossAxisCount: 3,
-                crossAxisSpacing: 12.w,
-                mainAxisSpacing: 12.h,
+                crossAxisSpacing: 5.w,
+                mainAxisSpacing: 5.h,
                 childAspectRatio: 0.8,
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
