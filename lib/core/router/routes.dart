@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:takhaty/features/layout/screens/user_bottom_navigation_screen.dart';
 import 'package:takhaty/features/onboarding/screens/onboarding_screen.dart';
 import 'package:takhaty/features/splash/screens/splash_screen.dart';
 
@@ -10,15 +11,17 @@ class AppRouter {
 
   static const String splashScreen = '/';
   static const String onboardingScreen = '/onboardingScreen';
-  static const String homeScreen = '/homeScreen';
+  static const String userBottomNavigationScreen =
+      '/UserBottomNavigationScreen';
 
   Route? onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
       // region Splash
       case splashScreen:
         return MaterialPageRoute(builder: (_) => const SplashScreen());
-      case homeScreen:
-        return MaterialPageRoute(builder: (_) => const HomeScreen());
+      case userBottomNavigationScreen:
+        return MaterialPageRoute(
+            builder: (_) => const UserBottomNavigationScreen());
       case onboardingScreen:
         return MaterialPageRoute(builder: (_) => const OnboardingScreen());
 

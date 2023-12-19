@@ -43,15 +43,15 @@ class _SplashScreenState extends State<SplashScreen> {
             SvgPicture.asset(ImagesManager.logo,
                 width: 45.w, color: Colors.white), //
             14.h.ph, // Your logo here
-            const Text(
+            Text(
               appName,
-              style: StylesManager.textStyle40WhiteSemiBold,
+              style: StylesManager.textStyle40WhiteBold,
               textAlign: TextAlign.center,
             ),
             14.h.ph, // Your logo here
             Text(
               StringsManager.appSlogan,
-              style: StylesManager.textStyle18White300,
+              style: StylesManager.textStyle18WhiteLight,
               textAlign: TextAlign.center,
             ),
             16.h.ph,

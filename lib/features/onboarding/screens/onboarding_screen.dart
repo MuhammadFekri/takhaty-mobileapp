@@ -36,7 +36,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   }
 
   void navigateToRegister() {
-    context.push(AppRouter.homeScreen);
+    context.push(AppRouter.userBottomNavigationScreen);
   }
 
   void _goToNextPage() {
