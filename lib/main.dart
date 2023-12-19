@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:takhaty/core/resources/colors_manager.dart';
+import 'package:takhaty/features/auth/cubit/auth_cubit.dart';
 
 import 'core/constants/constants.dart';
 import 'core/helpers/bloc_observer.dart';
@@ -51,20 +52,23 @@ class MyApp extends StatelessWidget {
       designSize: const Size(375, 818),
       minTextAdapt: true,
       splitScreenMode: true,
-      child: MaterialApp(
-        localizationsDelegates: context.localizationDelegates,
-        supportedLocales: context.supportedLocales,
-        locale: context.locale,
-        title: appName,
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          scaffoldBackgroundColor: ColorsManager.scaffoldBG,
-          colorScheme:
-              ColorScheme.fromSeed(seedColor: ColorsManager.primaryColor),
-          fontFamily: fontFamily,
-          useMaterial3: true,
+      child: MultiBlocProvider(
+        providers: [BlocProvider(create: (context) => AuthCubit())],
+        child: MaterialApp(
+          localizationsDelegates: context.localizationDelegates,
+          supportedLocales: context.supportedLocales,
+          locale: context.locale,
+          title: appName,
+          debugShowCheckedModeBanner: false,
+          theme: ThemeData(
+            scaffoldBackgroundColor: ColorsManager.scaffoldBG,
+            colorScheme:
+                ColorScheme.fromSeed(seedColor: ColorsManager.primaryColor),
+            fontFamily: fontFamily,
+            useMaterial3: true,
+          ),
+          onGenerateRoute: AppRouter().onGenerateRoute,
         ),
-        onGenerateRoute: AppRouter().onGenerateRoute,
       ),
     );
   }

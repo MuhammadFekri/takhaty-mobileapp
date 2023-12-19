@@ -17,4 +17,8 @@ class StringsManager {
   static String appointments = "المواعيد";
   static String clubs = "نوادى";
   static String profile = "حسابك";
+  static String enterPhone = "ادخل رقم الهاتف";
+  static String country = "الدولة-المنطقة";
+  static String phoneNumber = "رقم الهاتف";
+  static String continueString = "متابعة";
 }

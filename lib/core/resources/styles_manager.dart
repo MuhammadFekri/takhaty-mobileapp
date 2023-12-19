@@ -19,6 +19,16 @@ class StylesManager {
     fontSize: 14.sp,
     fontWeight: FontWeight.w400,
   );
+
+  static TextStyle textStyle14BlackRegular = TextStyle(
+    color: ColorsManager.blackColor,
+    fontSize: 14.sp,
+  );
+
+  static TextStyle textStyle14PrimaryBold = TextStyle(
+      color: ColorsManager.primaryColor,
+      fontSize: 14.sp,
+      fontWeight: FontWeight.bold);
   static TextStyle textStyle16BlackRegular = TextStyle(
       color: ColorsManager.blackColor,
       fontSize: 16.sp,
