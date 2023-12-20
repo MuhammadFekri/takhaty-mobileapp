@@ -12,6 +12,7 @@ import 'package:takhaty/features/home/components/most_frequent_consultant_item.d
 
 import '../../../core/components/label_text.dart';
 import '../../../core/components/search_text_field.dart';
+import '../../../core/router/routes.dart';
 import '../../categories/data/categories_data.dart';
 import '../../experts/components/top_rated_expert_item.dart';
 
@@ -104,7 +105,13 @@ class HomeScreen extends StatelessWidget {
               24.h.ph,
               LabelText(title: StringsManager.searchInApp),
               16.h.ph,
-              const SearchTextField(),
+              InkWell(
+                  onTap: () {
+                    context.push(AppRouter.searchScreen);
+                  },
+                  child: const SearchTextField(
+                    isEnabled: false,
+                  )),
               24.h.ph,
               LabelText(title: StringsManager.topRatedExperts),
               16.h.ph,

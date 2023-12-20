@@ -8,6 +8,9 @@ class ColorsManager {
   static const Color blackColor = Color(0xff090C09);
   static const Color greyColor = Color(0xff848484);
   static const Color grey2Color = Color(0xff858585);
+  static const Color grey3Color = Color(0xffF8F8F8);
+  static const Color grey4Color = Color(0xffFAFAFA);
+  static const Color grey5Color = Color(0xffF7F7F7);
   static const Color hintGreyColor = Color(0xffABABAB);
   static const Color scaffoldBG = Color(0xffFEFEFE);
   static const Color lighterWhiteColor = Color(0xffFDFDFD);

@@ -26,4 +26,9 @@ class ImagesManager {
   static const String schedule = "${path}schedule.svg";
   static const String community = "${path}community.svg";
   static const String profile = "${path}profile.svg";
+  static const String filter = "${path}filter.svg";
+  static const String sort = "${path}sort.svg";
+  static const String type = "${path}type.svg";
+  static const String time = "${path}time.svg";
+  static const String priceTag = "${path}pricetag.svg";
 }

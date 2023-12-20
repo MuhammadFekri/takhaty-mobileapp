@@ -8,13 +8,16 @@ import '../resources/strings_manager.dart';
 import '../resources/styles_manager.dart';
 
 class SearchTextField extends StatelessWidget {
+  final bool isEnabled;
   const SearchTextField({
     super.key,
+    this.isEnabled = true,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      enabled: isEnabled,
       decoration: InputDecoration(
           contentPadding:
               EdgeInsets.symmetric(horizontal: 16.w, vertical: 10.h),
@@ -24,6 +27,10 @@ class SearchTextField extends StatelessWidget {
             borderRadius: BorderRadius.circular(12.r),
           ),
           enabledBorder: OutlineInputBorder(
+            borderSide: const BorderSide(color: ColorsManager.hintGreyColor),
+            borderRadius: BorderRadius.circular(12.r),
+          ),
+          disabledBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: ColorsManager.hintGreyColor),
             borderRadius: BorderRadius.circular(12.r),
           ),

@@ -21,4 +21,10 @@ class StringsManager {
   static String country = "الدولة-المنطقة";
   static String phoneNumber = "رقم الهاتف";
   static String continueString = "متابعة";
+  static String filterResults = "تصفية النتائج";
+  static String sortResults = "ترتيب النتائج";
+  static String type = "النوع";
+  static String nearestTime = "أقرب إتاحة";
+  static String price = "السعر";
+  static String currencyPerHour = "ج/س";
 }

@@ -1,0 +1,80 @@
+import 'package:date_picker_timeline/date_picker_widget.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:takhaty/core/components/search_text_field.dart';
+import 'package:takhaty/core/extensions/extensions_helper.dart';
+import 'package:takhaty/core/resources/colors_manager.dart';
+import 'package:takhaty/core/resources/images_manager.dart';
+import 'package:takhaty/core/resources/strings_manager.dart';
+import 'package:takhaty/core/resources/styles_manager.dart';
+import 'package:takhaty/features/search/components/search_choice_widget.dart';
+
+import '../components/expert_search_item.dart';
+
+class SearchScreen extends StatelessWidget {
+  const SearchScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const SearchTextField(),
+      ),
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 16.w),
+        child: Column(
+          children: [
+            16.h.ph,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SearchChoiceWidget(
+                  title: StringsManager.filterResults,
+                  icon: ImagesManager.filter,
+                ),
+                16.w.pw,
+                SearchChoiceWidget(
+                  title: StringsManager.sortResults,
+                  icon: ImagesManager.sort,
+                ),
+              ],
+            ),
+            16.h.ph,
+            DatePicker(
+              DateTime.now(),
+              initialSelectedDate: DateTime.now(),
+              selectionColor: ColorsManager.primaryColor,
+              height: 80.h,
+              unSelectedColor: ColorsManager.grey4Color,
+              dayTextStyle: StylesManager.textStyle12BlackRegular
+                  .copyWith(color: ColorsManager.secondary2),
+              dateTextStyle: StylesManager.textStyle16BlackRegular.copyWith(
+                  color: ColorsManager.secondary2, fontWeight: FontWeight.bold),
+              selectedTextColor: Colors.white,
+              locale: "ar",
+              onDateChange: (date) {
+                // New date selected
+                // setState(() {
+                //   _selectedValue = date;
+                // });
+              },
+            ),
+            16.h.ph,
+            Expanded(
+              child: ListView.separated(
+                  physics: const BouncingScrollPhysics(),
+                  itemBuilder: (context, index) {
+                    return const ExpertSearchItem();
+                  },
+                  separatorBuilder: (context, index) {
+                    return 16.h.ph;
+                  },
+                  itemCount: 3),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}

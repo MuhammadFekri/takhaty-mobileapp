@@ -11,6 +11,7 @@ import 'package:takhaty/core/resources/styles_manager.dart';
 import 'package:takhaty/features/auth/cubit/auth_cubit.dart';
 
 import '../../../core/components/text_field_with_label.dart';
+import '../../../core/router/routes.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
@@ -68,7 +69,10 @@ class RegisterScreen extends StatelessWidget {
                 ),
                 64.h.ph,
                 DefaultButtonWidget(
-                    function: () {}, text: StringsManager.continueString),
+                    function: () {
+                      context.push(AppRouter.userBottomNavigationScreen);
+                    },
+                    text: StringsManager.continueString),
                 16.h.ph,
                 Center(
                   child: SizedBox(
