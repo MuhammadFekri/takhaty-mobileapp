@@ -21,23 +21,26 @@ class SearchChoiceWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: Container(
-        padding: EdgeInsets.all(12.h),
-        decoration: BoxDecoration(
-            color: ColorsManager.grey3Color,
-            borderRadius: BorderRadius.circular(8)),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            SvgPicture.asset(icon),
-            8.w.pw,
-            Expanded(
-                child: Text(
-              title,
-              style: StylesManager.textStyle16BlackRegular,
-            )),
-            SvgPicture.asset(ImagesManager.arrowDown),
-          ],
+      child: InkWell(
+        onTap: onTap,
+        child: Container(
+          padding: EdgeInsets.all(12.h),
+          decoration: BoxDecoration(
+              color: ColorsManager.grey3Color,
+              borderRadius: BorderRadius.circular(8)),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              SvgPicture.asset(icon),
+              8.w.pw,
+              Expanded(
+                  child: Text(
+                title,
+                style: StylesManager.textStyle16BlackRegular,
+              )),
+              SvgPicture.asset(ImagesManager.arrowDown),
+            ],
+          ),
         ),
       ),
     );

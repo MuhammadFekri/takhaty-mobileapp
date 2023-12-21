@@ -8,7 +8,9 @@ import 'package:takhaty/core/resources/colors_manager.dart';
 import 'package:takhaty/core/resources/images_manager.dart';
 import 'package:takhaty/core/resources/strings_manager.dart';
 import 'package:takhaty/core/resources/styles_manager.dart';
+import 'package:takhaty/core/router/routes.dart';
 import 'package:takhaty/features/search/components/search_choice_widget.dart';
+import 'package:takhaty/features/search/components/sort_sheet.dart';
 
 import '../components/expert_search_item.dart';
 
@@ -32,11 +34,26 @@ class SearchScreen extends StatelessWidget {
                 SearchChoiceWidget(
                   title: StringsManager.filterResults,
                   icon: ImagesManager.filter,
+                  onTap: () {
+                    context.push(AppRouter.firstFilterScreen);
+                  },
                 ),
                 16.w.pw,
                 SearchChoiceWidget(
                   title: StringsManager.sortResults,
                   icon: ImagesManager.sort,
+                  onTap: () {
+                    showModalBottomSheet(
+                      // shape: const RoundedRectangleBorder(
+                      //     borderRadius: BorderRadius.only(
+                      //         topLeft: Radius.circular(20),
+                      //         topRight: Radius.circular(20))),
+                      context: context,
+                      builder: (context) {
+                        return const SortSheet();
+                      },
+                    );
+                  },
                 ),
               ],
             ),

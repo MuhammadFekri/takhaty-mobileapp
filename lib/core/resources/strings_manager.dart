@@ -30,4 +30,17 @@ class StringsManager {
   static String selectVerifyMethod = "أختر طريقة للتحقق من رقم هاتفك";
   static String bySms = "عبر الرسالة النصية";
   static String byWhatsapp = "عبر الواتس آب";
+  static String filter = "تصفية";
+  static String sessionType = "نوع الجلسة";
+  static String conditionYouAreLookingFor = "الحالة التى تبحث عنها";
+  static String next = "التالى";
+  static String yourBudgetForAnHourlySession = "ميزانيتك للجلسة بالساعة ؟ ";
+  static String expertLanguage = "لغة المختص";
+  static String expertGender = "جنس المختص";
+  static String expertType = "نوع المختص";
+  static String apply = "تطبيق";
+  static String sortBy = "ترتيب حسب";
+  static String top = "الأعلى";
+  static String least = "الأقل";
+  static String rate = "التقييم";
 }

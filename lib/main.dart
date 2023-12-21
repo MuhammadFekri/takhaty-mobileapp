@@ -7,6 +7,7 @@ import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:takhaty/core/resources/colors_manager.dart';
 import 'package:takhaty/features/auth/cubit/auth_cubit.dart';
+import 'package:takhaty/features/layout/screens/user_bottom_navigation_screen.dart';
 
 import 'core/constants/constants.dart';
 import 'core/helpers/bloc_observer.dart';
@@ -68,6 +69,7 @@ class MyApp extends StatelessWidget {
             fontFamily: fontFamily,
             useMaterial3: true,
           ),
+          home: UserBottomNavigationScreen(),
           onGenerateRoute: AppRouter().onGenerateRoute,
         ),
       ),
