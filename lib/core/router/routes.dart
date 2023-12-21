@@ -4,9 +4,9 @@ import 'package:takhaty/features/layout/screens/user_bottom_navigation_screen.da
 import 'package:takhaty/features/onboarding/screens/onboarding_screen.dart';
 import 'package:takhaty/features/splash/screens/splash_screen.dart';
 
-import '../../features/search/screens/first_filter_screen.dart';
+// import '../../features/search/screens/first_filter_screen.dart';
 import '../../features/search/screens/search_screen.dart';
-import '../../features/search/screens/second_filter_screen.dart';
+// import '../../features/search/screens/second_filter_screen.dart';
 
 class AppRouter {
   static final RouteObserver<ModalRoute<void>> routeObserver =
@@ -35,10 +35,10 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const RegisterScreen());
       case searchScreen:
         return MaterialPageRoute(builder: (_) => const SearchScreen());
-      case firstFilterScreen:
-        return MaterialPageRoute(builder: (_) => const FirstFilterScreen());
-      case secondFilterScreen:
-        return MaterialPageRoute(builder: (_) => const SecondFilterScreen());
+      // case firstFilterScreen:
+      //   return MaterialPageRoute(builder: (_) => const FirstFilterScreen());
+      // case secondFilterScreen:
+      //   return MaterialPageRoute(builder: (_) => const SecondFilterScreen());
 
       // endregion
     }

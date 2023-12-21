@@ -32,7 +32,7 @@ class ImagesManager {
   static const String time = "${path}time.svg";
   static const String priceTag = "${path}pricetag.svg";
   static const String message = "${path}message.svg";
-  static const String whatsapp = "${path}whatsapp_logo.svg";
+  static const String whatsapp = "${path}whatsapp-logo.svg";
   static const String filterPrice = "${path}filter_price.svg";
   static const String gender = "${path}gender.svg";
   static const String health = "${path}health.svg";

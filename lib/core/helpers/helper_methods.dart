@@ -8,13 +8,12 @@ void showBtmSheet({
 }) {
   showModalBottomSheet(
     isScrollControlled: true,
-    backgroundColor: Colors.transparent,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(
         top: Radius.circular(20.r),
       ),
     ),
-    // clipBehavior: Clip.antiAliasWithSaveLayer,
+    clipBehavior: Clip.antiAliasWithSaveLayer,
     context: context,
     builder: (context) => btmSheetWidget,
   ).then((value) {
