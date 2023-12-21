@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -20,9 +18,7 @@ void showBtmSheet({
 
     // clipBehavior: Clip.antiAliasWithSaveLayer,
     context: context,
-    builder: (context) => BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-        child: btmSheetWidget),
+    builder: (context) => btmSheetWidget,
   ).then((value) {
     if (onThen != null) onThen(value);
   });
