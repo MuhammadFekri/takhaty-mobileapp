@@ -13,4 +13,13 @@ class AuthCubit extends Cubit<AuthState> {
     this.countryCode = countryCode;
     emit(ChangeCountryState());
   }
+
+  VerificationMethod? verificationMethod;
+
+  void selectVerificationMethod({required VerificationMethod method}) {
+    verificationMethod = method;
+    emit(SelectVerificationMethodState());
+  }
 }
+
+enum VerificationMethod { sms, whatsapp }

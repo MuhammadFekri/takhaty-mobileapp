@@ -62,6 +62,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             scaffoldBackgroundColor: ColorsManager.scaffoldBG,
+            canvasColor: Colors.white,
             colorScheme:
                 ColorScheme.fromSeed(seedColor: ColorsManager.primaryColor),
             fontFamily: fontFamily,

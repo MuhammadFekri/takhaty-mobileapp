@@ -46,7 +46,7 @@ class TopRatedExpertItem extends StatelessWidget {
               )
             ],
           ),
-          8.h.ph,
+          4.h.ph,
           Text(
             "رضوى محمد",
             style: StylesManager.textStyle16BlackRegular,

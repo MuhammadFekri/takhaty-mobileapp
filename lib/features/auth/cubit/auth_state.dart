@@ -6,3 +6,5 @@ abstract class AuthState {}
 class AuthInitial extends AuthState {}
 
 class ChangeCountryState extends AuthState {}
+
+class SelectVerificationMethodState extends AuthState {}

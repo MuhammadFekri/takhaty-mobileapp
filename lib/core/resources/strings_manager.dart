@@ -27,4 +27,7 @@ class StringsManager {
   static String nearestTime = "أقرب إتاحة";
   static String price = "السعر";
   static String currencyPerHour = "ج/س";
+  static String selectVerifyMethod = "أختر طريقة للتحقق من رقم هاتفك";
+  static String bySms = "عبر الرسالة النصية";
+  static String byWhatsapp = "عبر الواتس آب";
 }

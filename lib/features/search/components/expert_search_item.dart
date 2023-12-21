@@ -143,7 +143,7 @@ class ExpertSearchItem extends StatelessWidget {
                         8.h.ph,
                         Text(
                           "أسرية",
-                          style: StylesManager.textStyle14GreyRegular.copyWith(
+                          style: StylesManager.textStyle12BlackRegular.copyWith(
                             color: ColorsManager.blackColor,
                           ),
                         ),
@@ -168,7 +168,7 @@ class ExpertSearchItem extends StatelessWidget {
                         8.h.ph,
                         Text(
                           "20 نوفمبر. 01:45 م",
-                          style: StylesManager.textStyle14GreyRegular.copyWith(
+                          style: StylesManager.textStyle12BlackRegular.copyWith(
                             color: ColorsManager.blackColor,
                           ),
                         ),
@@ -193,7 +193,7 @@ class ExpertSearchItem extends StatelessWidget {
                         8.h.ph,
                         Text(
                           "400 ${StringsManager.currencyPerHour}",
-                          style: StylesManager.textStyle14GreyRegular.copyWith(
+                          style: StylesManager.textStyle12BlackRegular.copyWith(
                             color: ColorsManager.blackColor,
                           ),
                         ),

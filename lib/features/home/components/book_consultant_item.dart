@@ -54,13 +54,13 @@ class BookConsultantItem extends StatelessWidget {
               )
             ],
           ),
-          12.h.ph,
+          8.h.ph,
           Text(
             "جلسة فورية",
             style: StylesManager.textStyle16BlackRegular
                 .copyWith(fontWeight: FontWeight.w300),
           ),
-          12.h.ph,
+          8.h.ph,
           Text(
             "جلسات فورية للحالاة الطارئة خلال دقائق",
             style: StylesManager.textStyle14GreyRegular.copyWith(

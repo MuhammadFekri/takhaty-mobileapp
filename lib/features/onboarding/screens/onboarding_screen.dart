@@ -42,7 +42,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   void _goToNextPage() {
     if (_currentPage < OnBoardingData.data.length - 1) {
       _pageController.nextPage(
-        duration: const Duration(milliseconds: 400),
+        duration: const Duration(milliseconds: 300),
         curve: Curves.easeInOut,
       );
     } else {

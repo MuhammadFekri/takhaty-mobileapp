@@ -160,6 +160,7 @@ class FilledTextFieldWithLabel extends StatelessWidget {
           textAlignVertical: textAlignVertical ?? TextAlignVertical.center,
           autofillHints: autofillHints != null ? [autofillHints!] : null,
           style: style ?? Theme.of(context).textTheme.bodyText1,
+          onTapOutside: (event) => FocusScope.of(context).unfocus(),
           decoration: customInputDecoration(
             filled: filled,
             fillColor: fillColor,

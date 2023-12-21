@@ -1,7 +1,7 @@
 import 'package:date_picker_timeline/date_picker_widget.dart';
+import 'package:date_picker_timeline/extra/style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:takhaty/core/components/search_text_field.dart';
 import 'package:takhaty/core/extensions/extensions_helper.dart';
 import 'package:takhaty/core/resources/colors_manager.dart';
@@ -45,10 +45,11 @@ class SearchScreen extends StatelessWidget {
               DateTime.now(),
               initialSelectedDate: DateTime.now(),
               selectionColor: ColorsManager.primaryColor,
-              height: 80.h,
-              unSelectedColor: ColorsManager.grey4Color,
-              dayTextStyle: StylesManager.textStyle12BlackRegular
-                  .copyWith(color: ColorsManager.secondary2),
+              height: 82.h,
+              width: 60.w,
+              deactivatedColor: ColorsManager.grey4Color,
+              dayTextStyle: defaultDayTextStyle.copyWith(
+                  color: ColorsManager.secondary2, fontSize: 10.sp),
               dateTextStyle: StylesManager.textStyle16BlackRegular.copyWith(
                   color: ColorsManager.secondary2, fontWeight: FontWeight.bold),
               selectedTextColor: Colors.white,
