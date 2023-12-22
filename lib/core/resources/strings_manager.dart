@@ -50,4 +50,11 @@ class StringsManager {
   static String change = "تعديل";
   static String second = "ثانية";
   static String confirm = "تأكيد";
+  static String name = "الأسم";
+  static String enterName = "دخل اسمك";
+  static String email = "البريد الإلكتروني";
+  static String enterEmail = "بريدك الإلكتروني";
+  static String personalInfo = "المعلومات الشخصية";
+  static String saveAndContinue = "حفظ و متابعة";
+  static String acceptReceiveMail = "أوافق على تلقى آخر التحديثات عبر البريد";
 }

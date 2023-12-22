@@ -10,6 +10,7 @@ import 'package:takhaty/core/extensions/extensions_helper.dart';
 import 'package:takhaty/core/resources/colors_manager.dart';
 import 'package:takhaty/core/resources/strings_manager.dart';
 import 'package:takhaty/core/resources/styles_manager.dart';
+import 'package:takhaty/core/router/routes.dart';
 
 import '../cubit/auth_cubit.dart';
 
@@ -123,7 +124,9 @@ class _OtpScreenState extends td.State<OtpScreen> {
                 const Spacer(),
                 DefaultButtonWidget(
                     disable: _pinCodeController.text.isEmpty,
-                    function: () {},
+                    function: () {
+                      context.push(AppRouter.personalInfoScreen);
+                    },
                     text: StringsManager.confirm),
               ],
             );

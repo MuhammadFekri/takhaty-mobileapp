@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:takhaty/features/auth/screens/personal_info_screeen.dart';
 import 'package:takhaty/features/auth/screens/register_screen.dart';
 import 'package:takhaty/features/layout/screens/user_bottom_navigation_screen.dart';
 import 'package:takhaty/features/onboarding/screens/onboarding_screen.dart';
@@ -18,6 +19,7 @@ class AppRouter {
   static const String userBottomNavigationScreen =
       '/UserBottomNavigationScreen';
   static const String registerScreen = '/registerScreen';
+  static const String personalInfoScreen = '/personalInfoScreen';
   static const String searchScreen = '/SearchScreen';
   static const String firstFilterScreen = '/FirstFilterScreen';
   static const String secondFilterScreen = '/SecondFilterScreen';
@@ -39,6 +41,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const SearchScreen());
       case otpScreen:
         return MaterialPageRoute(builder: (_) => const OtpScreen());
+      case personalInfoScreen:
+        return MaterialPageRoute(builder: (_) => const PersonalInfoScreen());
       // case firstFilterScreen:
       //   return MaterialPageRoute(builder: (_) => const FirstFilterScreen());
       // case secondFilterScreen:
