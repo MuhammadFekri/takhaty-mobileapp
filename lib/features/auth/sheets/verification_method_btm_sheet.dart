@@ -8,6 +8,7 @@ import 'package:takhaty/core/resources/colors_manager.dart';
 import 'package:takhaty/core/resources/images_manager.dart';
 import 'package:takhaty/core/resources/strings_manager.dart';
 import 'package:takhaty/core/resources/styles_manager.dart';
+import 'package:takhaty/core/router/routes.dart';
 import 'package:takhaty/features/auth/cubit/auth_cubit.dart';
 
 class VerificationMethodBtmSheet extends StatefulWidget {
@@ -72,7 +73,11 @@ class _VerificationMethodBtmSheetState
                     ),
                     40.h.ph,
                     DefaultButtonWidget(
-                      function: () {},
+                      disable: cubit.verificationMethod == null,
+                      function: () {
+                        context.pop();
+                        context.push(AppRouter.otpScreen);
+                      },
                       text: StringsManager.continueString,
                     )
                   ],

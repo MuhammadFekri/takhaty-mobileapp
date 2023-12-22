@@ -81,6 +81,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     titleText: StringsManager.phoneNumber,
                     hintText: StringsManager.phoneNumber,
                     inputAction: TextInputAction.done,
+                    onChange: (value) {
+                      setState(() {});
+                    },
                     prefixIcon: const Icon(
                       CupertinoIcons.phone,
                     ),
@@ -89,6 +92,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                   64.h.ph,
                   DefaultButtonWidget(
+                      disable: _phoneController.text.isEmpty,
                       function: () {
                         showBtmSheet(
                           context: context,

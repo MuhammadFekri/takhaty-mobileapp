@@ -43,4 +43,11 @@ class StringsManager {
   static String top = "الأعلى";
   static String least = "الأقل";
   static String rate = "التقييم";
+  static String phoneVerify = "التحقق من الهاتف";
+  static String enterOtpCode = "أدخل رمز التحقق المرسل للرقم ";
+  static String codeResendAfter = "يتم إعادة إرسال الكود خلال ";
+  static String resend = "اعادة ارسال";
+  static String change = "تعديل";
+  static String second = "ثانية";
+  static String confirm = "تأكيد";
 }

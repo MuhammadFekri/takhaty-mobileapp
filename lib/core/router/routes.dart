@@ -5,6 +5,7 @@ import 'package:takhaty/features/onboarding/screens/onboarding_screen.dart';
 import 'package:takhaty/features/splash/screens/splash_screen.dart';
 
 // import '../../features/search/screens/first_filter_screen.dart';
+import '../../features/auth/screens/otp_screen.dart';
 import '../../features/search/screens/search_screen.dart';
 // import '../../features/search/screens/second_filter_screen.dart';
 
@@ -20,6 +21,7 @@ class AppRouter {
   static const String searchScreen = '/SearchScreen';
   static const String firstFilterScreen = '/FirstFilterScreen';
   static const String secondFilterScreen = '/SecondFilterScreen';
+  static const String otpScreen = '/otpScreen';
 
   Route? onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -35,6 +37,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const RegisterScreen());
       case searchScreen:
         return MaterialPageRoute(builder: (_) => const SearchScreen());
+      case otpScreen:
+        return MaterialPageRoute(builder: (_) => const OtpScreen());
       // case firstFilterScreen:
       //   return MaterialPageRoute(builder: (_) => const FirstFilterScreen());
       // case secondFilterScreen:
