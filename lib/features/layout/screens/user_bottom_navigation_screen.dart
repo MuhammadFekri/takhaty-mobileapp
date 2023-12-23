@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:takhaty/core/resources/colors_manager.dart';
 import 'package:takhaty/core/resources/strings_manager.dart';
 import 'package:takhaty/features/home/screens/home_screen.dart';
+import 'package:takhaty/features/settings/screens/settings_screen.dart';
 
 import '../../../core/resources/images_manager.dart';
 import '../data/model/bottom_bar_model.dart';
@@ -23,7 +24,7 @@ class _UserBottomNavigationScreenState
     const HomeScreen(),
     const SizedBox(),
     const SizedBox(),
-    const SizedBox(),
+    const SettingsScreen(),
   ];
 
   List<BottomBarItem> bottomBarItems = [
@@ -31,7 +32,7 @@ class _UserBottomNavigationScreenState
     BottomBarItem(
         icon: ImagesManager.schedule, title: StringsManager.appointments),
     BottomBarItem(icon: ImagesManager.community, title: StringsManager.clubs),
-    BottomBarItem(icon: ImagesManager.profile, title: StringsManager.profile),
+    BottomBarItem(icon: ImagesManager.profile, title: StringsManager.account),
   ];
 
   @override

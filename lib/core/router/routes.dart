@@ -7,7 +7,9 @@ import 'package:takhaty/features/splash/screens/splash_screen.dart';
 
 // import '../../features/search/screens/first_filter_screen.dart';
 import '../../features/auth/screens/otp_screen.dart';
+import '../../features/search/screens/first_filter_screen.dart';
 import '../../features/search/screens/search_screen.dart';
+import '../../features/search/screens/second_filter_screen.dart';
 // import '../../features/search/screens/second_filter_screen.dart';
 
 class AppRouter {
@@ -43,10 +45,10 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const OtpScreen());
       case personalInfoScreen:
         return MaterialPageRoute(builder: (_) => const PersonalInfoScreen());
-      // case firstFilterScreen:
-      //   return MaterialPageRoute(builder: (_) => const FirstFilterScreen());
-      // case secondFilterScreen:
-      //   return MaterialPageRoute(builder: (_) => const SecondFilterScreen());
+      case firstFilterScreen:
+        return MaterialPageRoute(builder: (_) => const FirstFilterScreen());
+      case secondFilterScreen:
+        return MaterialPageRoute(builder: (_) => const SecondFilterScreen());
 
       // endregion
     }

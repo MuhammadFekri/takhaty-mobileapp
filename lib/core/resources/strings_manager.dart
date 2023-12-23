@@ -16,7 +16,7 @@ class StringsManager {
   static String mostFrequentConsultations = "الإستشارات الأكثر تكراراً";
   static String appointments = "المواعيد";
   static String clubs = "نوادى";
-  static String profile = "حسابك";
+  static String account = "حسابك";
   static String enterPhone = "ادخل رقم الهاتف";
   static String country = "الدولة-المنطقة";
   static String phoneNumber = "رقم الهاتف";
@@ -57,4 +57,15 @@ class StringsManager {
   static String personalInfo = "المعلومات الشخصية";
   static String saveAndContinue = "حفظ و متابعة";
   static String acceptReceiveMail = "أوافق على تلقى آخر التحديثات عبر البريد";
+  static String settings = "الإعدادات";
+  static String profile = "الملف الشخصى";
+  static String favourites = "المفضلة";
+  static String wallet = "المحفظة";
+  static String courses = "الدورات";
+  static String lecturers = "ندواتى";
+  static String otherSettings = "إعدادات أُخرى";
+  static String joinASExpert = "أنضم كمختص";
+  static String blog = "المدونة";
+  static String help = "المساعدة";
+  static String signOut = "تسجيل الخروج";
 }

@@ -13,6 +13,7 @@ import 'core/helpers/bloc_observer.dart';
 import 'core/router/routes.dart';
 import 'core/services/connectivity/connectivity.dart';
 import 'core/services/network/local/cache_helper.dart';
+import 'features/layout/screens/user_bottom_navigation_screen.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -68,7 +69,7 @@ class MyApp extends StatelessWidget {
             fontFamily: fontFamily,
             useMaterial3: true,
           ),
-          // home: UserBottomNavigationScreen(),
+          home: const UserBottomNavigationScreen(),
           onGenerateRoute: AppRouter().onGenerateRoute,
         ),
       ),

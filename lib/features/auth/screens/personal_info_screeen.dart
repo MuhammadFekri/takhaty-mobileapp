@@ -93,7 +93,8 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
                       disable: _nameController.text.isEmpty ||
                           _emailController.text.isEmpty,
                       function: () {
-                        context.push(AppRouter.userBottomNavigationScreen);
+                        context.pushAndRemoveUntil(
+                            AppRouter.userBottomNavigationScreen);
                       },
                       text: StringsManager.saveAndContinue),
                   16.h.ph,

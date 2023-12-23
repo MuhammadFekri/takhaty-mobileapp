@@ -35,6 +35,9 @@ class StylesManager {
       fontWeight: FontWeight.w400,
       fontFamily: fontFamily);
 
+  static TextStyle textStyle16GrayRegular = TextStyle(
+      color: ColorsManager.grey2Color, fontSize: 16.sp, fontFamily: fontFamily);
+
   static TextStyle textStyle40WhiteBold = TextStyle(
     color: Colors.white,
     fontSize: 40.sp,
