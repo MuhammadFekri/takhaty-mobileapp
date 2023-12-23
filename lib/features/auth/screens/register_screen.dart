@@ -12,6 +12,7 @@ import 'package:takhaty/features/auth/cubit/auth_cubit.dart';
 import 'package:takhaty/features/auth/sheets/verification_method_btm_sheet.dart';
 
 import '../../../core/components/text_field_with_label.dart';
+import '../../../core/helpers/helper_methods.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -80,6 +81,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     titleText: StringsManager.phoneNumber,
                     hintText: StringsManager.phoneNumber,
                     inputAction: TextInputAction.done,
+                    onChange: (value) {
+                      setState(() {});
+                    },
                     prefixIcon: const Icon(
                       CupertinoIcons.phone,
                     ),
@@ -88,11 +92,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                   64.h.ph,
                   DefaultButtonWidget(
+                      disable: _phoneController.text.isEmpty,
                       function: () {
-                        showBottomSheet(
+                        showBtmSheet(
                           context: context,
-                          builder: (context) =>
-                              const VerificationMethodBtmSheet(),
+                          btmSheetWidget: const VerificationMethodBtmSheet(),
                         );
                       },
                       text: StringsManager.continueString),
