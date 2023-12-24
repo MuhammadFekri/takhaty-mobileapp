@@ -57,4 +57,16 @@ class StringsManager {
   static String personalInfo = "المعلومات الشخصية";
   static String saveAndContinue = "حفظ و متابعة";
   static String acceptReceiveMail = "أوافق على تلقى آخر التحديثات عبر البريد";
+  static String expertDetails = "تفاصيل المختص";
+  static String language = "اللغة";
+  static String presentation = "تقديم الجلسة";
+  static String aboutExpert = "عن المختص";
+  static String specialties = "التخصصات";
+  static String programs = "البرامج";
+  static String levels = "مراحل";
+  static String sessions = "جلسات";
+  static String ratings = "التقييمات";
+  static String currencyPerHour2 = "EGP / ساعة";
+  static String reserveNow = "أحجز الآن";
+  static String insteadOf = "بدلاً من";
 }

@@ -39,4 +39,10 @@ class ImagesManager {
   static const String language = "${path}language.svg";
   static const String session = "${path}session.svg";
   static const String verification = "${path}verification.svg";
+  static const String share = "${path}share.svg";
+  static const String fav = "${path}fav.svg";
+  static const String presentation = "${path}presentation.svg";
+  static const String level = "${path}level.svg";
+  static const String like = "${path}like.svg";
+  static const String dislike = "${path}dislike.svg";
 }

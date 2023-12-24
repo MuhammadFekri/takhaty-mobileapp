@@ -34,6 +34,11 @@ class StylesManager {
       fontSize: 16.sp,
       fontWeight: FontWeight.w400,
       fontFamily: fontFamily);
+  static TextStyle textStyle24BlackBold = TextStyle(
+    color: ColorsManager.blackColor,
+    fontSize: 24.sp,
+    fontWeight: FontWeight.w700,
+  );
 
   static TextStyle textStyle40WhiteBold = TextStyle(
     color: Colors.white,
