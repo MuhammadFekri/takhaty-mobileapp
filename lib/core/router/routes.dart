@@ -5,12 +5,8 @@ import 'package:takhaty/features/layout/screens/user_bottom_navigation_screen.da
 import 'package:takhaty/features/onboarding/screens/onboarding_screen.dart';
 import 'package:takhaty/features/splash/screens/splash_screen.dart';
 
-// import '../../features/search/screens/first_filter_screen.dart';
 import '../../features/auth/screens/otp_screen.dart';
-import '../../features/search/screens/first_filter_screen.dart';
 import '../../features/search/screens/search_screen.dart';
-import '../../features/search/screens/second_filter_screen.dart';
-// import '../../features/search/screens/second_filter_screen.dart';
 
 class AppRouter {
   static final RouteObserver<ModalRoute<void>> routeObserver =
@@ -26,6 +22,7 @@ class AppRouter {
   static const String firstFilterScreen = '/FirstFilterScreen';
   static const String secondFilterScreen = '/SecondFilterScreen';
   static const String otpScreen = '/otpScreen';
+  static const String expertDetailsScreen = '/expertDetailsScreen';
 
   Route? onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -49,6 +46,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const FirstFilterScreen());
       case secondFilterScreen:
         return MaterialPageRoute(builder: (_) => const SecondFilterScreen());
+      case expertDetailsScreen:
+        return MaterialPageRoute(builder: (_) => const ExpertDetailsScreen());
 
       // endregion
     }
