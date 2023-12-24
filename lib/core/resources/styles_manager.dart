@@ -14,6 +14,11 @@ class StylesManager {
     fontSize: 12.sp,
     fontWeight: FontWeight.w400,
   );
+  static TextStyle textStyle12GrayRegular = TextStyle(
+    color: ColorsManager.hintGreyColor,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+  );
   static TextStyle textStyle14GreyRegular = TextStyle(
     color: ColorsManager.greyColor,
     fontSize: 14.sp,

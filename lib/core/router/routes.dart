@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:takhaty/features/auth/screens/personal_info_screeen.dart';
 import 'package:takhaty/features/auth/screens/register_screen.dart';
+import 'package:takhaty/features/favourites/screens/favourites_screen.dart';
 import 'package:takhaty/features/layout/screens/user_bottom_navigation_screen.dart';
 import 'package:takhaty/features/onboarding/screens/onboarding_screen.dart';
+import 'package:takhaty/features/profile/screens/change_password_screen.dart';
+import 'package:takhaty/features/profile/screens/edit_profile_screen.dart';
 import 'package:takhaty/features/splash/screens/splash_screen.dart';
 
 import '../../features/auth/screens/otp_screen.dart';
+import '../../features/experts/expert_details_screen.dart';
+import '../../features/search/screens/first_filter_screen.dart';
 import '../../features/search/screens/search_screen.dart';
+import '../../features/search/screens/second_filter_screen.dart';
 
 class AppRouter {
   static final RouteObserver<ModalRoute<void>> routeObserver =
@@ -23,6 +29,9 @@ class AppRouter {
   static const String secondFilterScreen = '/SecondFilterScreen';
   static const String otpScreen = '/otpScreen';
   static const String expertDetailsScreen = '/expertDetailsScreen';
+  static const String editProfileScreen = '/editProfilesScreen';
+  static const String changePasswordScreen = '/changePasswordScreen';
+  static const String favouritesScreen = '/favouritesScreen';
 
   Route? onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -48,6 +57,12 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const SecondFilterScreen());
       case expertDetailsScreen:
         return MaterialPageRoute(builder: (_) => const ExpertDetailsScreen());
+      case editProfileScreen:
+        return MaterialPageRoute(builder: (_) => const EditProfileScreen());
+      case changePasswordScreen:
+        return MaterialPageRoute(builder: (_) => const ChangePasswordScreen());
+      case favouritesScreen:
+        return MaterialPageRoute(builder: (_) => const FavouritesScreen());
 
       // endregion
     }

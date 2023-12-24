@@ -41,6 +41,7 @@ class ImagesManager {
   static const String verification = "${path}verification.svg";
   static const String share = "${path}share.svg";
   static const String fav = "${path}fav.svg";
+  static const String favFilled = "${path}fav_filled.svg";
   static const String presentation = "${path}presentation.svg";
   static const String level = "${path}level.svg";
   static const String like = "${path}like.svg";

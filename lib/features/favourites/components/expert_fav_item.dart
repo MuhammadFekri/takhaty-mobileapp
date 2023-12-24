@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:takhaty/core/components/default_button.dart';
 import 'package:takhaty/core/extensions/extensions_helper.dart';
 import 'package:takhaty/core/router/routes.dart';
 import 'package:takhaty/features/experts/components/expert_data_item.dart';
 
+import '../../../core/components/like_button_widget.dart';
 import '../../../core/components/verified_icon_widget.dart';
 import '../../../core/resources/colors_manager.dart';
 import '../../../core/resources/images_manager.dart';
 import '../../../core/resources/strings_manager.dart';
 import '../../../core/resources/styles_manager.dart';
 
-class ExpertSearchItem extends StatelessWidget {
-  const ExpertSearchItem({super.key});
+class ExpertFavItem extends StatelessWidget {
+  const ExpertFavItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -61,21 +63,7 @@ class ExpertSearchItem extends StatelessWidget {
                                   .copyWith(fontSize: 18.sp),
                             ),
                           ),
-                          Container(
-                            padding: EdgeInsets.symmetric(
-                                horizontal: 12.w, vertical: 8.h),
-                            decoration: BoxDecoration(
-                              color: ColorsManager.secondary2,
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: Text(
-                              "أخصائى نفسي",
-                              style: StylesManager.textStyle12BlackRegular
-                                  .copyWith(
-                                      color: ColorsManager.lighterWhiteColor,
-                                      fontWeight: FontWeight.bold),
-                            ),
-                          ),
+                          const LikeButtonWidget(),
                         ],
                       ),
                       11.h.ph,
@@ -125,20 +113,18 @@ class ExpertSearchItem extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   ExpertDataItem(
-                    icon: ImagesManager.type,
-                    label: StringsManager.type,
-                    data: "أسرية",
-                  ),
-                  ExpertDataItem(
-                    icon: ImagesManager.time,
-                    label: StringsManager.nearestTime,
-                    data: "20 نوفمبر. 01:45 م",
-                  ),
-                  ExpertDataItem(
                     icon: ImagesManager.priceTag,
                     label: StringsManager.price,
                     data: "400 ${StringsManager.currencyPerHour}",
                   ),
+                  DefaultButtonWidget(
+                    width: context.width * 0.25,
+                    customHeight: 35.h,
+                    radius: 8.r,
+                    fontSize: 12.sp,
+                    text: StringsManager.reserveSession,
+                    function: () {},
+                  )
                 ],
               ),
             )

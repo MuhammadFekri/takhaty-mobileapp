@@ -31,12 +31,16 @@ class SettingsScreen extends StatelessWidget {
             SettingsTile(
               name: StringsManager.profile,
               iconPath: ImagesManager.accountSettings,
-              onTap: () {},
+              onTap: () {
+                context.push(AppRouter.editProfileScreen);
+              },
             ),
             SettingsTile(
               name: StringsManager.favourites,
               iconPath: ImagesManager.fav,
-              onTap: () {},
+              onTap: () {
+                context.push(AppRouter.favouritesScreen);
+              },
             ),
             SettingsTile(
               name: StringsManager.wallet,

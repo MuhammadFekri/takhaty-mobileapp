@@ -47,7 +47,8 @@ class StringsManager {
   static String enterOtpCode = "أدخل رمز التحقق المرسل للرقم ";
   static String codeResendAfter = "يتم إعادة إرسال الكود خلال ";
   static String resend = "اعادة ارسال";
-  static String change = "تعديل";
+  static String edit = "تعديل";
+  static String change = "تغيير";
   static String second = "ثانية";
   static String confirm = "تأكيد";
   static String name = "الأسم";
@@ -56,6 +57,7 @@ class StringsManager {
   static String enterEmail = "بريدك الإلكتروني";
   static String personalInfo = "المعلومات الشخصية";
   static String saveAndContinue = "حفظ و متابعة";
+  static String saveChanges = "حفظ التغييرات";
   static String acceptReceiveMail = "أوافق على تلقى آخر التحديثات عبر البريد";
   static String expertDetails = "تفاصيل المختص";
   static String language = "اللغة";
@@ -74,10 +76,22 @@ class StringsManager {
   static String favourites = "المفضلة";
   static String wallet = "المحفظة";
   static String courses = "الدورات";
+  static String courses2 = "دورات";
   static String lecturers = "ندواتى";
   static String otherSettings = "إعدادات أُخرى";
   static String joinASExpert = "أنضم كمختص";
   static String blog = "المدونة";
   static String help = "المساعدة";
   static String signOut = "تسجيل الخروج";
+  static String password = "كلمة المرور";
+  static String enter = "ادخل";
+  static String changePassword = "تغيير كلمة المرور";
+  static String currentPassword = "كلمة المرور الحالية";
+  static String newPassword = "كلمة المرور الجديدة";
+  static String confirmNewPassword = "تأكيد كلمة المرور الجديدة";
+  static String experts = "مختصيين";
+  static String reserveSession = "حجز جلسة";
+  static String host = "المضيف";
+  static String date = "التاريخ";
+  static String emptySeats = "أماكن متبقية";
 }

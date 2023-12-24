@@ -95,7 +95,7 @@ class _OtpScreenState extends td.State<OtpScreen> {
                       function: () {
                         context.pop();
                       },
-                      text: StringsManager.change,
+                      text: StringsManager.edit,
                     )
                   ],
                 ),
