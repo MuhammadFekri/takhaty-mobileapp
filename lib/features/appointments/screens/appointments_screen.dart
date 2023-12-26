@@ -2,24 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:takhaty/core/extensions/extensions_helper.dart';
 import 'package:takhaty/core/resources/strings_manager.dart';
-import 'package:takhaty/features/favourites/components/expert_fav_item.dart';
 
-import '../components/club_fav_item.dart';
-import '../components/course_fav_item.dart';
+import '../components/lecture_appointment_item.dart';
+import '../components/session_appointment_item.dart';
 
-class FavouritesScreen extends StatefulWidget {
-  const FavouritesScreen({super.key});
+class AppointmentsScreen extends StatefulWidget {
+  const AppointmentsScreen({super.key});
 
   @override
-  State<FavouritesScreen> createState() => _FavouritesScreenState();
+  State<AppointmentsScreen> createState() => _AppointmentsScreenState();
 }
 
-class _FavouritesScreenState extends State<FavouritesScreen> {
+class _AppointmentsScreenState extends State<AppointmentsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(StringsManager.favourites),
+        title: Text(StringsManager.appointments),
       ),
       body: DefaultTabController(
           length: 3,
@@ -27,32 +26,35 @@ class _FavouritesScreenState extends State<FavouritesScreen> {
             children: [
               TabBar(indicatorSize: TabBarIndicatorSize.tab, tabs: [
                 Tab(
-                  text: StringsManager.experts,
+                  text: StringsManager.sessions,
                 ),
                 Tab(
                   text: StringsManager.courses2,
                 ),
                 Tab(
-                  text: StringsManager.clubs,
+                  text: StringsManager.lecturers,
                 ),
               ]),
               Expanded(
                   child: TabBarView(children: [
                 ListView.separated(
                     padding: const EdgeInsets.all(16),
-                    itemBuilder: (context, index) => const ExpertFavItem(),
+                    itemBuilder: (context, index) =>
+                        const SessionAppointmentItem(),
                     separatorBuilder: (context, index) => 16.h.ph,
-                    itemCount: 5),
+                    itemCount: 2),
                 ListView.separated(
                     padding: const EdgeInsets.all(16),
-                    itemBuilder: (context, index) => const CourseFavIcon(),
+                    itemBuilder: (context, index) =>
+                        const LectureAppointmentItem(),
                     separatorBuilder: (context, index) => 16.h.ph,
-                    itemCount: 5),
+                    itemCount: 2),
                 ListView.separated(
                     padding: const EdgeInsets.all(16),
-                    itemBuilder: (context, index) => const ClubFavIcon(),
+                    itemBuilder: (context, index) =>
+                        const LectureAppointmentItem(),
                     separatorBuilder: (context, index) => 16.h.ph,
-                    itemCount: 5),
+                    itemCount: 2),
               ]))
             ],
           )),

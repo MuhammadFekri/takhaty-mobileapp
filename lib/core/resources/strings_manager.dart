@@ -77,7 +77,8 @@ class StringsManager {
   static String wallet = "المحفظة";
   static String courses = "الدورات";
   static String courses2 = "دورات";
-  static String lecturers = "ندواتى";
+  static String myLecturers = "ندواتى";
+  static String lecturers = "ندوات";
   static String otherSettings = "إعدادات أُخرى";
   static String joinASExpert = "أنضم كمختص";
   static String blog = "المدونة";
@@ -94,4 +95,23 @@ class StringsManager {
   static String host = "المضيف";
   static String date = "التاريخ";
   static String emptySeats = "أماكن متبقية";
+  static String follower = "متابع";
+  static String post = "منشور";
+  static String totalBalance = "الرصيد الإجمالى";
+  static String addBalance = "إضافة رصيد";
+  static String noTransactionsYet = "لا توجد معاملات لعرضها";
+  static String transactions = "المعاملات";
+  static String lastTransactions = "أخر المعاملات";
+  static String helpTeamReadyToAnswer = "فريق المساعدة جاهز للرد على إستفسارك";
+  static String contactUs = "تواصل معنا";
+  static String faqs = " الأسئلة الشائعة ؟";
+  static String areYouSureYouWantToLogout =
+      "هل أنت بالفعل تريد تسجيل خروجك من تَخَطِّي ؟";
+  static String cancel = "إلغاء";
+  static String confirmLogout = "هل أنت بالفعل تريد تسجيل خروجك من تَخَطي";
+  static String yes = "نعم";
+  static String no = "لا";
+  static String sessionDate = "تاريخ الجلسة";
+  static String sessionTime = "وقت الجلسة";
+  static String time = "الوقت";
 }

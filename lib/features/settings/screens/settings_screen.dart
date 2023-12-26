@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:takhaty/core/extensions/extensions_helper.dart';
+import 'package:takhaty/core/helpers/helper_methods.dart';
 import 'package:takhaty/core/resources/images_manager.dart';
 import 'package:takhaty/core/resources/strings_manager.dart';
 import 'package:takhaty/core/resources/styles_manager.dart';
 import 'package:takhaty/core/router/routes.dart';
 
+import '../../../core/components/confirmation_sheet.dart';
 import '../../../core/resources/colors_manager.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -45,12 +47,16 @@ class SettingsScreen extends StatelessWidget {
             SettingsTile(
               name: StringsManager.wallet,
               iconPath: ImagesManager.wallet,
-              onTap: () {},
+              onTap: () {
+                context.push(AppRouter.walletScreen);
+              },
             ),
             SettingsTile(
               name: StringsManager.appointments,
               iconPath: ImagesManager.schedule,
-              onTap: () {},
+              onTap: () {
+                context.push(AppRouter.appointmentsScreen);
+              },
             ),
             SettingsTile(
               name: StringsManager.courses,
@@ -58,7 +64,7 @@ class SettingsScreen extends StatelessWidget {
               onTap: () {},
             ),
             SettingsTile(
-              name: StringsManager.lecturers,
+              name: StringsManager.myLecturers,
               iconPath: ImagesManager.lecture,
               onTap: () {},
             ),
@@ -80,13 +86,22 @@ class SettingsScreen extends StatelessWidget {
             SettingsTile(
               name: StringsManager.help,
               iconPath: ImagesManager.help,
-              onTap: () {},
+              onTap: () {
+                context.push(AppRouter.helpScreen);
+              },
             ),
             SettingsTile(
               name: StringsManager.signOut,
               iconPath: ImagesManager.logout,
               onTap: () {
-                context.pushReplacement(AppRouter.registerScreen);
+                showBtmSheet(
+                    context: context,
+                    btmSheetWidget: ConfirmationSheet(
+                      text: StringsManager.areYouSureYouWantToLogout,
+                      onConfirm: () {
+                        context.pushReplacement(AppRouter.registerScreen);
+                      },
+                    ));
               },
             ),
           ],

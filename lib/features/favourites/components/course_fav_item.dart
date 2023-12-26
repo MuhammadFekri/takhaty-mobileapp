@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:takhaty/core/extensions/extensions_helper.dart';
-import 'package:takhaty/core/router/routes.dart';
 
 import '../../../core/components/like_button_widget.dart';
 import '../../../core/resources/colors_manager.dart';
@@ -16,9 +15,7 @@ class CourseFavIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        context.push(AppRouter.expertDetailsScreen);
-      },
+      onTap: () {},
       child: Container(
         padding: EdgeInsets.symmetric(vertical: 12.h, horizontal: 16.w),
         decoration: BoxDecoration(

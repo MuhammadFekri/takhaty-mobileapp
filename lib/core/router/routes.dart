@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:takhaty/features/appointments/screens/appointments_screen.dart';
 import 'package:takhaty/features/auth/screens/personal_info_screeen.dart';
 import 'package:takhaty/features/auth/screens/register_screen.dart';
 import 'package:takhaty/features/favourites/screens/favourites_screen.dart';
@@ -7,12 +8,14 @@ import 'package:takhaty/features/onboarding/screens/onboarding_screen.dart';
 import 'package:takhaty/features/profile/screens/change_password_screen.dart';
 import 'package:takhaty/features/profile/screens/edit_profile_screen.dart';
 import 'package:takhaty/features/splash/screens/splash_screen.dart';
+import 'package:takhaty/features/wallet/screens/wallet_screen.dart';
 
 import '../../features/auth/screens/otp_screen.dart';
 import '../../features/experts/expert_details_screen.dart';
 import '../../features/search/screens/first_filter_screen.dart';
 import '../../features/search/screens/search_screen.dart';
 import '../../features/search/screens/second_filter_screen.dart';
+import '../../features/settings/screens/help_screen.dart';
 
 class AppRouter {
   static final RouteObserver<ModalRoute<void>> routeObserver =
@@ -32,6 +35,9 @@ class AppRouter {
   static const String editProfileScreen = '/editProfilesScreen';
   static const String changePasswordScreen = '/changePasswordScreen';
   static const String favouritesScreen = '/favouritesScreen';
+  static const String walletScreen = '/walletScreen';
+  static const String helpScreen = '/helpScreen';
+  static const String appointmentsScreen = '/appointmentsScreen';
 
   Route? onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -63,6 +69,12 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const ChangePasswordScreen());
       case favouritesScreen:
         return MaterialPageRoute(builder: (_) => const FavouritesScreen());
+      case walletScreen:
+        return MaterialPageRoute(builder: (_) => const WalletScreen());
+      case helpScreen:
+        return MaterialPageRoute(builder: (_) => const HelpScreen());
+      case appointmentsScreen:
+        return MaterialPageRoute(builder: (_) => const AppointmentsScreen());
 
       // endregion
     }

@@ -54,4 +54,6 @@ class ImagesManager {
   static const String logout = "${path}log out.svg";
   static const String mentalHealth = "${path}mental-health-line.svg";
   static const String wallet = "${path}wallet icon.svg";
+  static const String walletVector = "${path}wallet vector.svg";
+  static const String helpVector = "${path}help vector.svg";
 }
