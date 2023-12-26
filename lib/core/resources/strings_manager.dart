@@ -77,6 +77,7 @@ class StringsManager {
   static String wallet = "المحفظة";
   static String courses = "الدورات";
   static String courses2 = "دورات";
+  static String myCourses = "دوراتي";
   static String myLecturers = "ندواتى";
   static String lecturers = "ندوات";
   static String otherSettings = "إعدادات أُخرى";
@@ -114,4 +115,8 @@ class StringsManager {
   static String sessionDate = "تاريخ الجلسة";
   static String sessionTime = "وقت الجلسة";
   static String time = "الوقت";
+  // done , inProgress , notStarted
+  static String done = "اكتملت";
+  static String inProgress = "في تقدم";
+  static String notStarted = "لم تبدأ";
 }

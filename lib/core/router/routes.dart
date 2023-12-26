@@ -7,6 +7,7 @@ import 'package:takhaty/features/layout/screens/user_bottom_navigation_screen.da
 import 'package:takhaty/features/onboarding/screens/onboarding_screen.dart';
 import 'package:takhaty/features/profile/screens/change_password_screen.dart';
 import 'package:takhaty/features/profile/screens/edit_profile_screen.dart';
+import 'package:takhaty/features/settings/screens/my_courses_screen.dart';
 import 'package:takhaty/features/splash/screens/splash_screen.dart';
 import 'package:takhaty/features/wallet/screens/wallet_screen.dart';
 
@@ -16,6 +17,7 @@ import '../../features/search/screens/first_filter_screen.dart';
 import '../../features/search/screens/search_screen.dart';
 import '../../features/search/screens/second_filter_screen.dart';
 import '../../features/settings/screens/help_screen.dart';
+import '../../features/settings/screens/my_lectures_screen.dart';
 
 class AppRouter {
   static final RouteObserver<ModalRoute<void>> routeObserver =
@@ -38,6 +40,8 @@ class AppRouter {
   static const String walletScreen = '/walletScreen';
   static const String helpScreen = '/helpScreen';
   static const String appointmentsScreen = '/appointmentsScreen';
+  static const String myCoursesScreen = '/myCoursesScreen';
+  static const String myLecturesScreen = '/myLecturesScreen';
 
   Route? onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -75,6 +79,10 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const HelpScreen());
       case appointmentsScreen:
         return MaterialPageRoute(builder: (_) => const AppointmentsScreen());
+      case myCoursesScreen:
+        return MaterialPageRoute(builder: (_) => const MyCoursesScreen());
+      case myLecturesScreen:
+        return MaterialPageRoute(builder: (_) => const MyLecturesScreen());
 
       // endregion
     }

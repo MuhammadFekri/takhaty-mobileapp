@@ -61,12 +61,16 @@ class SettingsScreen extends StatelessWidget {
             SettingsTile(
               name: StringsManager.courses,
               iconPath: ImagesManager.mentalHealth,
-              onTap: () {},
+              onTap: () {
+                context.push(AppRouter.myCoursesScreen);
+              },
             ),
             SettingsTile(
               name: StringsManager.myLecturers,
               iconPath: ImagesManager.lecture,
-              onTap: () {},
+              onTap: () {
+                context.push(AppRouter.myLecturesScreen);
+              },
             ),
             Text(
               StringsManager.otherSettings,
