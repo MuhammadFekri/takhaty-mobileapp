@@ -120,7 +120,7 @@ class StringsManager {
   static String inProgress = "في تقدم";
   static String notStarted = "لم تبدأ";
   static String reserveNewAppointment = "حجز جلسة جديدة";
-  static String appointmentTimeTaken = "مُدة الجلسة";
+  static String appointmentPeriod = "مُدة الجلسة";
   static String appointmentDate = "تاريخ الجلسة";
   static String appointmentTime = "وقت الجلسة";
   static String reserveDetails = "تفاصيل الحجز";
@@ -141,4 +141,6 @@ class StringsManager {
   static String cardNumber = "رقم البطاقة";
   static String expiryDate = "تاريخ الإنتهاء";
   static String cvv = "كود الحماية";
+  static String sessionDetails = "تفاصيل الجلسة";
+  static String conditionsYouAreSufferingFrom = "الحالات التى تُعانى منها";
 }

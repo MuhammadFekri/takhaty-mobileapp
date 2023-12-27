@@ -1,4 +1,3 @@
-import 'package:date_picker_timeline/date_picker_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:takhaty/core/components/default_button.dart';
@@ -30,7 +29,7 @@ class AddAppointmentScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     LabelText(
-                      title: StringsManager.appointmentTimeTaken,
+                      title: StringsManager.appointmentPeriod,
                     ),
                     16.h.ph,
                     ...List.generate(3, (index) {

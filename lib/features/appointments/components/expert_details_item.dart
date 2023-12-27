@@ -2,22 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:takhaty/core/extensions/extensions_helper.dart';
 import 'package:takhaty/core/router/routes.dart';
-import 'package:takhaty/features/experts/components/expert_data_item.dart';
 
 import '../../../core/components/verified_icon_widget.dart';
 import '../../../core/resources/colors_manager.dart';
-import '../../../core/resources/images_manager.dart';
-import '../../../core/resources/strings_manager.dart';
 import '../../../core/resources/styles_manager.dart';
 
-class SessionAppointmentItem extends StatelessWidget {
-  const SessionAppointmentItem({super.key});
+class ExpertDetailsItem extends StatelessWidget {
+  const ExpertDetailsItem({super.key});
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        context.push(AppRouter.sessionDetailsScreen);
+        context.push(AppRouter.expertDetailsScreen);
       },
       child: Container(
         padding: EdgeInsets.symmetric(vertical: 12.h, horizontal: 16.w),
@@ -115,28 +112,6 @@ class SessionAppointmentItem extends StatelessWidget {
                 ),
               ],
             ),
-            12.h.ph,
-            Container(
-              padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: ColorsManager.grey5Color),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  ExpertDataItem(
-                    icon: ImagesManager.time,
-                    label: StringsManager.sessionDate,
-                    data: "20 نوفمبر",
-                  ),
-                  ExpertDataItem(
-                    icon: ImagesManager.time,
-                    label: StringsManager.sessionTime,
-                    data: "01:45 م",
-                  ),
-                ],
-              ),
-            )
           ],
         ),
       ),

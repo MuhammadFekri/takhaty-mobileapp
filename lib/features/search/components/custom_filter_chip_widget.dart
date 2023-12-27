@@ -18,14 +18,14 @@ class CustomFilterChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 32.w, vertical: 15.h),
+      padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 15.h),
       decoration: BoxDecoration(
-          color: ColorsManager.grey4Color,
+          color: ColorsManager.spotColor,
           borderRadius: BorderRadius.circular(12.r)),
       child: Text(
         title,
-        style: StylesManager.textStyle16BlackRegular.copyWith(
-            fontWeight: FontWeight.normal, color: ColorsManager.grey2Color),
+        style: StylesManager.textStyle14BlackRegular.copyWith(
+            fontWeight: FontWeight.normal, color: ColorsManager.primaryColor),
       ),
     );
   }

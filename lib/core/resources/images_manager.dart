@@ -64,4 +64,5 @@ class ImagesManager {
   static const String amazonPay = "${path}amazon_pay.svg";
   static const String visa = "${path}visa.svg";
   static const String mastercard = "${path}mastercard.svg";
+  static const String chat = "${path}quill_chat.svg";
 }

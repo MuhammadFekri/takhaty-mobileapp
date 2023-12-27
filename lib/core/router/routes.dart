@@ -13,6 +13,7 @@ import 'package:takhaty/features/settings/screens/my_courses_screen.dart';
 import 'package:takhaty/features/splash/screens/splash_screen.dart';
 import 'package:takhaty/features/wallet/screens/wallet_screen.dart';
 
+import '../../features/appointments/screens/session_details_screen.dart';
 import '../../features/auth/screens/otp_screen.dart';
 import '../../features/checkout/screens/checkout.dart';
 import '../../features/experts/screens/expert_details_screen.dart';
@@ -48,6 +49,7 @@ class AppRouter {
   static const String addAppointmentScreen = '/addAppointmentScreen';
   static const String checkOutScreen = '/checkOutScreen';
   static const String completePaymentScreen = '/completePaymentScreen';
+  static const String sessionDetailsScreen = '/sessionDetailsScreen';
 
   Route? onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -95,6 +97,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const CheckOutScreen());
       case completePaymentScreen:
         return MaterialPageRoute(builder: (_) => const CompletePaymentScreen());
+      case sessionDetailsScreen:
+        return MaterialPageRoute(builder: (_) => const SessionDetailsScreen());
 
       // endregion
     }
