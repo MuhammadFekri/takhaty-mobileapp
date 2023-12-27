@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:takhaty/features/appointments/screens/add_appointment_screen.dart';
 import 'package:takhaty/features/appointments/screens/appointments_screen.dart';
 import 'package:takhaty/features/auth/screens/personal_info_screeen.dart';
 import 'package:takhaty/features/auth/screens/register_screen.dart';
+import 'package:takhaty/features/checkout/screens/complete_payment_screen.dart';
 import 'package:takhaty/features/favourites/screens/favourites_screen.dart';
 import 'package:takhaty/features/layout/screens/user_bottom_navigation_screen.dart';
 import 'package:takhaty/features/onboarding/screens/onboarding_screen.dart';
@@ -12,7 +14,8 @@ import 'package:takhaty/features/splash/screens/splash_screen.dart';
 import 'package:takhaty/features/wallet/screens/wallet_screen.dart';
 
 import '../../features/auth/screens/otp_screen.dart';
-import '../../features/experts/expert_details_screen.dart';
+import '../../features/checkout/screens/checkout.dart';
+import '../../features/experts/screens/expert_details_screen.dart';
 import '../../features/search/screens/first_filter_screen.dart';
 import '../../features/search/screens/search_screen.dart';
 import '../../features/search/screens/second_filter_screen.dart';
@@ -42,6 +45,9 @@ class AppRouter {
   static const String appointmentsScreen = '/appointmentsScreen';
   static const String myCoursesScreen = '/myCoursesScreen';
   static const String myLecturesScreen = '/myLecturesScreen';
+  static const String addAppointmentScreen = '/addAppointmentScreen';
+  static const String checkOutScreen = '/checkOutScreen';
+  static const String completePaymentScreen = '/completePaymentScreen';
 
   Route? onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -83,6 +89,12 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const MyCoursesScreen());
       case myLecturesScreen:
         return MaterialPageRoute(builder: (_) => const MyLecturesScreen());
+      case addAppointmentScreen:
+        return MaterialPageRoute(builder: (_) => const AddAppointmentScreen());
+      case checkOutScreen:
+        return MaterialPageRoute(builder: (_) => const CheckOutScreen());
+      case completePaymentScreen:
+        return MaterialPageRoute(builder: (_) => const CompletePaymentScreen());
 
       // endregion
     }

@@ -8,14 +8,15 @@ import 'package:takhaty/core/components/label_text.dart';
 import 'package:takhaty/core/extensions/extensions_helper.dart';
 import 'package:takhaty/core/resources/colors_manager.dart';
 import 'package:takhaty/core/resources/images_manager.dart';
+import 'package:takhaty/core/router/routes.dart';
 import 'package:takhaty/features/experts/components/rating_item.dart';
 import 'package:takhaty/features/search/components/custom_filter_chip_widget.dart';
 
-import '../../core/resources/strings_manager.dart';
-import '../../core/resources/styles_manager.dart';
-import '../search/components/custom_expert_action.dart';
-import 'components/expert_data_item.dart';
-import 'components/program_item.dart';
+import '../../../core/resources/strings_manager.dart';
+import '../../../core/resources/styles_manager.dart';
+import '../../search/components/custom_expert_action.dart';
+import '../components/expert_data_item.dart';
+import '../components/program_item.dart';
 
 class ExpertDetailsScreen extends StatelessWidget {
   const ExpertDetailsScreen({super.key});
@@ -238,7 +239,9 @@ class ExpertDetailsScreen extends StatelessWidget {
                   ),
                   DefaultButtonWidget(
                       width: 115.w,
-                      function: () {},
+                      function: () {
+                        context.push(AppRouter.addAppointmentScreen);
+                      },
                       text: StringsManager.reserveNow)
                 ],
               ),

@@ -1,0 +1,12 @@
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Wallet" clip-path="url(#clip0_100_5274)">
+<path id="Vector" d="M20.0152 3.23074H3.39986C2.38026 3.23074 1.55371 4.18644 1.55371 5.36536V18.1731C1.55371 19.352 2.38026 20.3077 3.39986 20.3077H20.0152C21.0349 20.3077 21.8614 19.352 21.8614 18.1731V5.36536C21.8614 4.18644 21.0349 3.23074 20.0152 3.23074Z" stroke="#133E5D" stroke-width="2.38" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="Rectangle 5" x="15.8382" y="7.82307" width="7.89231" height="6.50769" rx="3.25385" fill="#FEFEFE" stroke="#133E5D" stroke-width="1.8"/>
+<circle id="Ellipse 1" cx="18.8615" cy="11.0769" r="0.692308" fill="#133E5D"/>
+</g>
+<defs>
+<clipPath id="clip0_100_5274">
+<rect width="24" height="24" fill="white" transform="translate(0.630615)"/>
+</clipPath>
+</defs>
+</svg>

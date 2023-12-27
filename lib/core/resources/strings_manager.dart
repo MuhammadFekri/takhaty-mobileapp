@@ -119,4 +119,26 @@ class StringsManager {
   static String done = "اكتملت";
   static String inProgress = "في تقدم";
   static String notStarted = "لم تبدأ";
+  static String reserveNewAppointment = "حجز جلسة جديدة";
+  static String appointmentTimeTaken = "مُدة الجلسة";
+  static String appointmentDate = "تاريخ الجلسة";
+  static String appointmentTime = "وقت الجلسة";
+  static String reserveDetails = "تفاصيل الحجز";
+  static String appointmentDetails = "تفاصيل الجلسة";
+  static String discountCoupon = "كوبون خصم";
+  static String enterCouponCode = "أدخل كود الخصم";
+  static String checkOutDetails = "تفاصيل الفاتورة";
+  static String cost = "التكلفة";
+  static String tax = "الضريبة";
+  static String discount = "الخصم";
+  static String total = "الإجمالى";
+  static String youCanPayWith = "يمكنك الدفع عن طريق";
+  static String payWithWallet = "الدفع عن طريق المحفظة";
+  static String payNow = "أدفع الآن";
+  static String completePayment = "إكمال الدفع";
+  static String payTotalToSkip = "الدفع لتخطى مبلغ";
+  static String cardHolderName = "أسم صاحب البطاقة";
+  static String cardNumber = "رقم البطاقة";
+  static String expiryDate = "تاريخ الإنتهاء";
+  static String cvv = "كود الحماية";
 }

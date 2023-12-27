@@ -56,4 +56,12 @@ class ImagesManager {
   static const String wallet = "${path}wallet icon.svg";
   static const String walletVector = "${path}wallet vector.svg";
   static const String helpVector = "${path}help vector.svg";
+  static const String appointmentTime = "${path}appointment_time.svg";
+  static const String appointmentCalender = "${path}appointment_calender.svg";
+  static const String period = "${path}period.svg";
+  static const String recentPatient = "${path}recent_patient.svg";
+  static const String appointmentWallet = "${path}wallet.svg";
+  static const String amazonPay = "${path}amazon_pay.svg";
+  static const String visa = "${path}visa.svg";
+  static const String mastercard = "${path}mastercard.svg";
 }
