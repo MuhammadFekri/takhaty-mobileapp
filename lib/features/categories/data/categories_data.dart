@@ -1,4 +1,5 @@
 import 'package:takhaty/core/resources/images_manager.dart';
+import 'package:takhaty/core/router/routes.dart';
 
 import 'model/category_model.dart';
 
@@ -19,28 +20,28 @@ class CategoriesData {
 
   static const List<CategoryModel> categories = [
     CategoryModel(
-      image: categoryImage1,
-      title: categoryTitle1,
-    ),
+        image: categoryImage1,
+        title: categoryTitle1,
+        screenRoute: AppRouter.personalizeYourselfScreen),
     CategoryModel(
-      image: categoryImage2,
-      title: categoryTitle2,
-    ),
+        image: categoryImage2,
+        title: categoryTitle2,
+        screenRoute: AppRouter.personalizeYourselfScreen),
     CategoryModel(
-      image: categoryImage3,
-      title: categoryTitle3,
-    ),
+        image: categoryImage3,
+        title: categoryTitle3,
+        screenRoute: AppRouter.personalizeYourselfScreen),
     CategoryModel(
-      image: categoryImage4,
-      title: categoryTitle4,
-    ),
+        image: categoryImage4,
+        title: categoryTitle4,
+        screenRoute: AppRouter.personalizeYourselfScreen),
     CategoryModel(
-      image: categoryImage5,
-      title: categoryTitle5,
-    ),
+        image: categoryImage5,
+        title: categoryTitle5,
+        screenRoute: AppRouter.personalizeYourselfScreen),
     CategoryModel(
-      image: categoryImage6,
-      title: categoryTitle6,
-    ),
+        image: categoryImage6,
+        title: categoryTitle6,
+        screenRoute: AppRouter.category6Screen),
   ];
 }

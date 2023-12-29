@@ -143,4 +143,24 @@ class StringsManager {
   static String cvv = "كود الحماية";
   static String sessionDetails = "تفاصيل الجلسة";
   static String conditionsYouAreSufferingFrom = "الحالات التى تُعانى منها";
+  static String notification = "الإشعارات";
+  static String markAllAsRead = "تحديد الكل كمقروء";
+  static String personalizeYourself = "شخص نفسك";
+  static String questions = "أسئلة";
+  static String minutes = "دقائق";
+  static String examSteps = "خطوات الإختبار";
+  static String startExam = "إبدأ الإختبار";
+  static String previous = "السابق";
+  static String finishExam = "إنهاء الإختبار";
+  static String examResult = "نتيجة المقياس";
+  static String yourResultShow = "نتيجتك تُظهر";
+  static String recommendAnImmediateSession = "نرشح لك جلسة فورية";
+  static String sendNotificationToStartExamEverySixWeeks =
+      "أرسل تنبيه لعمل المقياس مرة كل 6 أسابيع";
+  static String backToExams = "العودة للمقاييس";
+  static String relieveYourShock = "خفف صدمتك";
+  static String relatedCourses = "دورات ذات صِلة";
+  static String relatedLectures = "ندوات ذات صِلة";
+  static String more = "المزيد";
+  static String placesRemaining = "أماكن متبقية";
 }

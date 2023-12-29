@@ -65,4 +65,10 @@ class ImagesManager {
   static const String visa = "${path}visa.svg";
   static const String mastercard = "${path}mastercard.svg";
   static const String chat = "${path}quill_chat.svg";
+  static const String notificationTypeIcon =
+      "${path}notification_type_icon.svg";
+  static const String timeMin = "${path}time_min.svg";
+  static const String info = "${path}info.svg";
+  static const String alarm = "${path}alarm.svg";
+  static const String examChoice = "${path}exam_choice.svg";
 }

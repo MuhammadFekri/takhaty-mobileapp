@@ -85,7 +85,11 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   20.w.pw,
-                  SvgPicture.asset(ImagesManager.notificationsIcon),
+                  GestureDetector(
+                      onTap: () {
+                        context.push(AppRouter.notificationScreen);
+                      },
+                      child: SvgPicture.asset(ImagesManager.notificationsIcon)),
                 ],
               ),
               34.h.ph,

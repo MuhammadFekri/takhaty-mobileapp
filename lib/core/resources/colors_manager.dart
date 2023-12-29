@@ -13,9 +13,13 @@ class ColorsManager {
   static const Color grey3Color = Color(0xffF8F8F8);
   static const Color grey4Color = Color(0xffFAFAFA);
   static const Color grey5Color = Color(0xffF7F7F7);
+  static const Color grey6Color = Color(0xFFD7D7D7);
   static const Color hintGreyColor = Color(0xffABABAB);
   static const Color scaffoldBG = Color(0xffFEFEFE);
   static const Color lighterWhiteColor = Color(0xffFDFDFD);
+  static const Color lighterWhiteBorderColor = Color(0xFFEAEAEA);
   static const Color shadowColor = Color(0x0C000000);
   static const Color redColor = Color(0xffCB0000);
+  static const Color redLightColor = Color(0xFFFDFAFA);
+  static const Color secondaryDarkColor = Color(0x192DA13B);
 }
