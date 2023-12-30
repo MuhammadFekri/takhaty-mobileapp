@@ -69,7 +69,7 @@ class ExpertFavItem extends StatelessWidget {
                       11.h.ph,
                       Text(
                         "أخصائى مساعد حاصلة على درجة الماجيستير فى علم النفس جامعة القاهرة",
-                        style: StylesManager.textStyle14GreyRegular
+                        style: StylesManager.textStyle14GrayRegular
                             .copyWith(color: ColorsManager.grey2Color),
                       ),
                       8.h.ph,
@@ -78,12 +78,12 @@ class ExpertFavItem extends StatelessWidget {
                           children: [
                             TextSpan(
                               text: '+',
-                              style: StylesManager.textStyle14GreyRegular
+                              style: StylesManager.textStyle14GrayRegular
                                   .copyWith(color: ColorsManager.primaryColor),
                             ),
                             TextSpan(
                               text: '200',
-                              style: StylesManager.textStyle14GreyRegular
+                              style: StylesManager.textStyle14GrayRegular
                                   .copyWith(
                                       color: ColorsManager.primaryColor,
                                       fontWeight: FontWeight.bold),
@@ -91,7 +91,7 @@ class ExpertFavItem extends StatelessWidget {
                             TextSpan(
                               text: ' تقييم',
                               style:
-                                  StylesManager.textStyle14GreyRegular.copyWith(
+                                  StylesManager.textStyle14GrayRegular.copyWith(
                                 color: ColorsManager.primaryColor,
                               ),
                             ),

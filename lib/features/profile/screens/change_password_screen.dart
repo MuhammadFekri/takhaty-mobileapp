@@ -47,7 +47,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  FilledTextFieldWithLabel(
+                  DefaultTextField(
                     controller: _currentPassController,
                     keyboardType: TextInputType.text,
                     titleText: StringsManager.currentPassword,
@@ -58,7 +58,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                     },
                   ),
                   24.h.ph,
-                  FilledTextFieldWithLabel(
+                  DefaultTextField(
                     controller: _newPassController,
                     keyboardType: TextInputType.text,
                     titleText: StringsManager.newPassword,
@@ -69,7 +69,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                     },
                   ),
                   24.h.ph,
-                  FilledTextFieldWithLabel(
+                  DefaultTextField(
                     controller: _confirmPassController,
                     keyboardType: TextInputType.text,
                     titleText: StringsManager.confirmNewPassword,

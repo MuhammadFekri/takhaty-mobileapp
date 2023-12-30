@@ -65,11 +65,11 @@ class ClubFavIcon extends StatelessWidget {
                               children: [
                                 TextSpan(
                                   text: '1200 ',
-                                  style: StylesManager.textStyle14GreyRegular,
+                                  style: StylesManager.textStyle14GrayRegular,
                                 ),
                                 TextSpan(
                                   text: StringsManager.follower,
-                                  style: StylesManager.textStyle14GreyRegular,
+                                  style: StylesManager.textStyle14GrayRegular,
                                 ),
                               ],
                             ),
@@ -80,11 +80,11 @@ class ClubFavIcon extends StatelessWidget {
                               children: [
                                 TextSpan(
                                   text: '200 ',
-                                  style: StylesManager.textStyle14GreyRegular,
+                                  style: StylesManager.textStyle14GrayRegular,
                                 ),
                                 TextSpan(
                                   text: StringsManager.post,
-                                  style: StylesManager.textStyle14GreyRegular,
+                                  style: StylesManager.textStyle14GrayRegular,
                                 ),
                               ],
                             ),

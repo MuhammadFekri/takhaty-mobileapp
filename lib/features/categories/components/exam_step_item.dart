@@ -20,7 +20,7 @@ class ExamStepItem extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
             child: Text(
               "1- الإجابة على الأسئلة المطروحة.",
-              style: StylesManager.textStyle14GreyRegular
+              style: StylesManager.textStyle14GrayRegular
                   .copyWith(color: ColorsManager.grey2Color),
             ),
           ),

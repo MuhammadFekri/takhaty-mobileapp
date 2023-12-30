@@ -55,7 +55,7 @@ class CourseItem extends StatelessWidget {
                           TextSpan(
                             text: ' د.رضوى محمد',
                             style:
-                                StylesManager.textStyle14GreyRegular.copyWith(
+                                StylesManager.textStyle14GrayRegular.copyWith(
                               color: ColorsManager.primaryColor,
                             ),
                           ),
@@ -100,7 +100,7 @@ class CourseItem extends StatelessWidget {
                         ),
                         Text(
                           StringsManager.currency,
-                          style: StylesManager.textStyle14GreyRegular
+                          style: StylesManager.textStyle14GrayRegular
                               .copyWith(color: ColorsManager.hintGreyColor),
                         ),
                         Text(" 2000",

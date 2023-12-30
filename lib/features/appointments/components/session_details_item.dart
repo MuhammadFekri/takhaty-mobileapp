@@ -56,7 +56,7 @@ class SessionDetailsItem extends StatelessWidget {
                       children: [
                         TextSpan(
                           text: '${StringsManager.date}:  ',
-                          style: StylesManager.textStyle14GreyRegular,
+                          style: StylesManager.textStyle14GrayRegular,
                         ),
                         TextSpan(
                           text: '20 نوفمبر',
@@ -79,7 +79,7 @@ class SessionDetailsItem extends StatelessWidget {
                       children: [
                         TextSpan(
                           text: '${StringsManager.time}:  ',
-                          style: StylesManager.textStyle14GreyRegular,
+                          style: StylesManager.textStyle14GrayRegular,
                         ),
                         TextSpan(
                           text: ' 01:45 م',
@@ -103,7 +103,7 @@ class SessionDetailsItem extends StatelessWidget {
                   children: [
                     TextSpan(
                       text: '${StringsManager.appointmentPeriod}:  ',
-                      style: StylesManager.textStyle14GreyRegular,
+                      style: StylesManager.textStyle14GrayRegular,
                     ),
                     TextSpan(
                       text: '45 د',

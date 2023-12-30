@@ -75,7 +75,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     ),
                   ),
                   32.h.ph,
-                  FilledTextFieldWithLabel(
+                  DefaultTextField(
                     controller: _phoneController,
                     keyboardType: TextInputType.phone,
                     titleText: StringsManager.phoneNumber,

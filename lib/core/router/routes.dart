@@ -4,6 +4,7 @@ import 'package:takhaty/features/appointments/screens/appointments_screen.dart';
 import 'package:takhaty/features/auth/screens/personal_info_screeen.dart';
 import 'package:takhaty/features/auth/screens/register_screen.dart';
 import 'package:takhaty/features/checkout/screens/complete_payment_screen.dart';
+import 'package:takhaty/features/clubs/screens/club_details_screen.dart';
 import 'package:takhaty/features/favourites/screens/favourites_screen.dart';
 import 'package:takhaty/features/layout/screens/user_bottom_navigation_screen.dart';
 import 'package:takhaty/features/notification/screens/notification_screen.dart';
@@ -22,6 +23,8 @@ import '../../features/categories/screens/exam_screen.dart';
 import '../../features/categories/screens/personalize_yourself_question_details_screen.dart';
 import '../../features/categories/screens/personalize_yourself_screen.dart';
 import '../../features/checkout/screens/checkout.dart';
+import '../../features/clubs/screens/clubs_screen.dart';
+import '../../features/clubs/screens/post_comments_screen.dart';
 import '../../features/experts/screens/expert_details_screen.dart';
 import '../../features/search/screens/first_filter_screen.dart';
 import '../../features/search/screens/search_screen.dart';
@@ -63,6 +66,9 @@ class AppRouter {
   static const String examScreen = '/examScreen';
   static const String examResultScreen = '/examResultScreen';
   static const String category6Screen = '/category6Screen';
+  static const String clubsScreen = '/clubsScreen';
+  static const String clubDetailsScreen = '/clubDetailsScreen';
+  static const String postCommentsScreen = '/postCommentsScreen';
 
   Route? onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -126,6 +132,12 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const ExamResultScreen());
       case category6Screen:
         return MaterialPageRoute(builder: (_) => const Category6Screen());
+      case clubsScreen:
+        return MaterialPageRoute(builder: (_) => const ClubsScreen());
+      case clubDetailsScreen:
+        return MaterialPageRoute(builder: (_) => const ClubDetailsScreen());
+      case postCommentsScreen:
+        return MaterialPageRoute(builder: (_) => const PostCommentsScreen());
 
       // endregion
     }

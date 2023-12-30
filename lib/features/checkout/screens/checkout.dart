@@ -98,7 +98,7 @@ class CheckOutScreen extends StatelessWidget {
                           Text(
                             "أخصائى مساعد حاصلة على درجة الماجيستير فى علم النفس جامعة القاهرة",
                             style:
-                                StylesManager.textStyle14GreyRegular.copyWith(
+                                StylesManager.textStyle14GrayRegular.copyWith(
                               color: ColorsManager.grey2Color,
                             ),
                           ),
@@ -119,7 +119,7 @@ class CheckOutScreen extends StatelessWidget {
                   children: [
                     Text(
                       StringsManager.appointmentDetails,
-                      style: StylesManager.textStyle14GreyRegular
+                      style: StylesManager.textStyle14GrayRegular
                           .copyWith(color: ColorsManager.grey2Color),
                     ),
                     20.h.ph,
@@ -132,7 +132,7 @@ class CheckOutScreen extends StatelessWidget {
                             8.w.pw,
                             Text(
                               "جلسة أسرية",
-                              style: StylesManager.textStyle14GreyRegular
+                              style: StylesManager.textStyle14GrayRegular
                                   .copyWith(color: ColorsManager.blackColor),
                             )
                           ],
@@ -143,7 +143,7 @@ class CheckOutScreen extends StatelessWidget {
                             8.w.pw,
                             Text(
                               "01:45 م",
-                              style: StylesManager.textStyle14GreyRegular
+                              style: StylesManager.textStyle14GrayRegular
                                   .copyWith(color: ColorsManager.blackColor),
                             )
                           ],
@@ -161,7 +161,7 @@ class CheckOutScreen extends StatelessWidget {
                             8.w.pw,
                             Text(
                               "20 نوفمبر",
-                              style: StylesManager.textStyle14GreyRegular
+                              style: StylesManager.textStyle14GrayRegular
                                   .copyWith(color: ColorsManager.blackColor),
                             )
                           ],
@@ -172,7 +172,7 @@ class CheckOutScreen extends StatelessWidget {
                             8.w.pw,
                             Text(
                               "45 دقيقة",
-                              style: StylesManager.textStyle14GreyRegular
+                              style: StylesManager.textStyle14GrayRegular
                                   .copyWith(color: ColorsManager.blackColor),
                             )
                           ],
@@ -219,7 +219,7 @@ class CheckOutScreen extends StatelessWidget {
                     children: [
                       Text(
                         StringsManager.checkOutDetails,
-                        style: StylesManager.textStyle14GreyRegular
+                        style: StylesManager.textStyle14GrayRegular
                             .copyWith(color: ColorsManager.grey2Color),
                       ),
                       24.h.ph,
@@ -290,7 +290,7 @@ class CheckOutScreen extends StatelessWidget {
               Center(
                 child: Text(
                   StringsManager.youCanPayWith,
-                  style: StylesManager.textStyle14GreyRegular,
+                  style: StylesManager.textStyle14GrayRegular,
                 ),
               ),
               27.h.ph,

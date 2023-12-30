@@ -29,7 +29,7 @@ class CategoryItem extends StatelessWidget {
               Text(
                 categoryModel.title,
                 textAlign: TextAlign.center,
-                style: StylesManager.textStyle14GreyRegular.copyWith(
+                style: StylesManager.textStyle14GrayRegular.copyWith(
                     color: ColorsManager.blackColor,
                     fontWeight: FontWeight.w500),
               )

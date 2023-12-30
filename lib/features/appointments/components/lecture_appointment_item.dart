@@ -60,7 +60,7 @@ class LectureAppointmentItem extends StatelessWidget {
                             TextSpan(
                               text: ' د.رضوى محمد',
                               style:
-                                  StylesManager.textStyle14GreyRegular.copyWith(
+                                  StylesManager.textStyle14GrayRegular.copyWith(
                                 color: ColorsManager.primaryColor,
                               ),
                             ),

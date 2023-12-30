@@ -70,7 +70,7 @@ class CourseFavIcon extends StatelessWidget {
                             TextSpan(
                               text: ' د.رضوى محمد',
                               style:
-                                  StylesManager.textStyle14GreyRegular.copyWith(
+                                  StylesManager.textStyle14GrayRegular.copyWith(
                                 color: ColorsManager.primaryColor,
                               ),
                             ),
@@ -87,7 +87,7 @@ class CourseFavIcon extends StatelessWidget {
                             ),
                             TextSpan(
                               text: '22/12/2023',
-                              style: StylesManager.textStyle14GreyRegular,
+                              style: StylesManager.textStyle14GrayRegular,
                             ),
                           ],
                         ),
@@ -110,7 +110,7 @@ class CourseFavIcon extends StatelessWidget {
                                     TextSpan(
                                       text: ' 20 ',
                                       style:
-                                          StylesManager.textStyle14GreyRegular,
+                                          StylesManager.textStyle14GrayRegular,
                                     ),
                                     TextSpan(
                                       text: StringsManager.emptySeats,
@@ -131,7 +131,7 @@ class CourseFavIcon extends StatelessWidget {
                                 ),
                                 TextSpan(
                                   text: StringsManager.currency,
-                                  style: StylesManager.textStyle14GreyRegular,
+                                  style: StylesManager.textStyle14GrayRegular,
                                 ),
                               ],
                             ),

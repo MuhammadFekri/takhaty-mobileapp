@@ -69,7 +69,7 @@ class PersonalizeYourselfQuestionDetailsScreen extends StatelessWidget {
                       padding: EdgeInsets.only(right: 16.w, left: 40.w),
                       child: Text(
                         "كيف تعرف ان لديك وسواس قهرى ؟ وكيف تعرف درجة شدته لديك؟",
-                        style: StylesManager.textStyle14GreyRegular
+                        style: StylesManager.textStyle14GrayRegular
                             .copyWith(color: ColorsManager.grey2Color),
                       ),
                     ),

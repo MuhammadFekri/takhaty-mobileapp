@@ -1,4 +1,3 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -153,7 +152,7 @@ class ExpertDetailsScreen extends StatelessWidget {
                   12.h.ph,
                   Text(
                     "أخصائى مساعد حاصلة على درجة الماجيستير فى علم النفس جامعة القاهرة و ماجيستير صحة نفسية من جامعة الإسكندرية.",
-                    style: StylesManager.textStyle14GreyRegular,
+                    style: StylesManager.textStyle14GrayRegular,
                   ),
                   24.h.ph,
                   LabelText(title: StringsManager.specialties),
@@ -230,7 +229,7 @@ class ExpertDetailsScreen extends StatelessWidget {
                       ),
                       Text(
                         "${StringsManager.insteadOf} 650 ${StringsManager.currency}",
-                        style: StylesManager.textStyle14GreyRegular.copyWith(
+                        style: StylesManager.textStyle14GrayRegular.copyWith(
                             color: ColorsManager.grey2Color,
                             decorationColor: ColorsManager.grey2Color,
                             decoration: TextDecoration.lineThrough),

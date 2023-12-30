@@ -4,8 +4,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:takhaty/core/extensions/extensions_helper.dart';
 
 import '../../../core/resources/colors_manager.dart';
-import '../../../core/resources/images_manager.dart';
-import '../../../core/resources/strings_manager.dart';
 import '../../../core/resources/styles_manager.dart';
 
 class ExpertDataItem extends StatelessWidget {
@@ -33,7 +31,7 @@ class ExpertDataItem extends StatelessWidget {
             children: [
               Text(
                 label,
-                style: StylesManager.textStyle14GreyRegular.copyWith(
+                style: StylesManager.textStyle14GrayRegular.copyWith(
                     color: ColorsManager.grey2Color,
                     fontWeight: FontWeight.w300),
               ),

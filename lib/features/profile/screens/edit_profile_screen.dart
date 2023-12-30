@@ -47,7 +47,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  FilledTextFieldWithLabel(
+                  DefaultTextField(
                     controller: _nameController,
                     keyboardType: TextInputType.name,
                     titleText: StringsManager.name,
@@ -58,7 +58,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                     },
                   ),
                   24.h.ph,
-                  FilledTextFieldWithLabel(
+                  DefaultTextField(
                     controller: _emailController,
                     keyboardType: TextInputType.emailAddress,
                     titleText: StringsManager.email,
@@ -69,7 +69,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                     },
                   ),
                   24.h.ph,
-                  FilledTextFieldWithLabel(
+                  DefaultTextField(
                     controller: _passwordController,
                     keyboardType: TextInputType.text,
                     titleText: StringsManager.password,

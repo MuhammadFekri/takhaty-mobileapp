@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:takhaty/core/resources/colors_manager.dart';
 import 'package:takhaty/core/resources/strings_manager.dart';
 import 'package:takhaty/features/appointments/screens/appointments_screen.dart';
+import 'package:takhaty/features/clubs/screens/clubs_screen.dart';
 import 'package:takhaty/features/home/screens/home_screen.dart';
 import 'package:takhaty/features/settings/screens/settings_screen.dart';
 
@@ -24,7 +25,7 @@ class _UserBottomNavigationScreenState
   List<Widget> screens = [
     const HomeScreen(),
     const AppointmentsScreen(),
-    const SizedBox(),
+    const ClubsScreen(),
     const SettingsScreen(),
   ];
 

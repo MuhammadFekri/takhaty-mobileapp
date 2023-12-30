@@ -9,7 +9,6 @@ import 'package:takhaty/core/resources/images_manager.dart';
 import 'package:takhaty/core/resources/strings_manager.dart';
 
 import '../../../core/components/custom_rounded_back_button.dart';
-import '../../../core/components/label_text.dart';
 import '../../../core/resources/styles_manager.dart';
 import '../../experts/components/top_rated_expert_item.dart';
 import '../../home/components/book_consultant_item.dart';
@@ -64,7 +63,7 @@ class ExamResultScreen extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 16.w),
                 child: Text(
                   "يظهر أن لديك اضطراب وسواس قهرى بشكل مرتفع, الجيد هو أنه تقوم بالمتابعة مع مختص للتخلص من هذه الحالة",
-                  style: StylesManager.textStyle14GreyRegular,
+                  style: StylesManager.textStyle14GrayRegular,
                 ),
               ),
               29.h.ph,

@@ -5,8 +5,8 @@ import '../constants/constants.dart';
 import '../resources/colors_manager.dart';
 import '../resources/styles_manager.dart';
 
-class FilledTextFieldWithLabel extends StatelessWidget {
-  const FilledTextFieldWithLabel({
+class DefaultTextField extends StatelessWidget {
+  const DefaultTextField({
     Key? key,
     this.validator,
     this.onSaved,
@@ -23,7 +23,7 @@ class FilledTextFieldWithLabel extends StatelessWidget {
     this.suffixIcon,
     this.prefixIcon,
     this.focusNode,
-    this.inputAction = TextInputAction.next,
+    this.inputAction,
     this.autofocus = false,
     this.capitalization = TextCapitalization.none,
     this.labelColor,
@@ -31,6 +31,7 @@ class FilledTextFieldWithLabel extends StatelessWidget {
     this.fillColor,
     this.autoValidateMode,
     this.maxLines = 1,
+    this.minLines = 1,
     this.initialValue,
     this.maxLength,
     this.counterText,
@@ -74,6 +75,7 @@ class FilledTextFieldWithLabel extends StatelessWidget {
   final Color? fillColor;
   final AutovalidateMode? autoValidateMode;
   final int maxLines;
+  final int minLines;
   final String? initialValue;
   final int? maxLength;
   final String? counterText;
@@ -153,6 +155,7 @@ class FilledTextFieldWithLabel extends StatelessWidget {
           autofocus: autofocus,
           textCapitalization: capitalization,
           maxLines: maxLines,
+          minLines: minLines,
           maxLength: maxLength,
           initialValue: initialValue,
           textDirection: textDirection,

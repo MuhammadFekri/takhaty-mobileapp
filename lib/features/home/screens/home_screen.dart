@@ -59,7 +59,7 @@ class HomeScreen extends StatelessWidget {
                         8.h.ph,
                         Text(
                           StringsManager.wishHappyDay,
-                          style: StylesManager.textStyle14GreyRegular,
+                          style: StylesManager.textStyle14GrayRegular,
                         )
                       ],
                     ),

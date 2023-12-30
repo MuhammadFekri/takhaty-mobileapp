@@ -20,7 +20,7 @@ class StylesManager {
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle textStyle14GreyRegular = TextStyle(
+  static TextStyle textStyle14GrayRegular = TextStyle(
     color: ColorsManager.greyColor,
     fontSize: 14.sp,
     fontWeight: FontWeight.w400,
@@ -28,6 +28,18 @@ class StylesManager {
 
   static TextStyle textStyle14BlackRegular = TextStyle(
     color: ColorsManager.blackColor,
+    fontSize: 14.sp,
+  );
+
+  static TextStyle textStyle14BlackBold = TextStyle(
+    color: ColorsManager.blackColor,
+    fontWeight: FontWeight.bold,
+    fontSize: 14.sp,
+  );
+
+  static TextStyle textStyle14BlackSemiBold = TextStyle(
+    color: ColorsManager.blackColor,
+    fontWeight: FontWeight.w500,
     fontSize: 14.sp,
   );
 
@@ -87,7 +99,7 @@ class StylesManager {
   static TextStyle textStyle16BlackSemiBold = TextStyle(
     color: Colors.black,
     fontSize: 16.sp,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w500,
   );
 
   static TextStyle textStyle18BlackSemiBold = TextStyle(
@@ -95,5 +107,4 @@ class StylesManager {
     fontSize: 18.sp,
     fontWeight: FontWeight.w500,
   );
-
 }

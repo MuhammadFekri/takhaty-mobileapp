@@ -26,7 +26,7 @@ class NotificationItem extends StatelessWidget {
         Expanded(
           child: Text(
             "نذكرك بموعد الجلسة المُحددة مع د.على بعد نصف ساعة من الآن",
-            style: StylesManager.textStyle14GreyRegular
+            style: StylesManager.textStyle14GrayRegular
                 .copyWith(color: ColorsManager.grey2Color),
           ),
         ),

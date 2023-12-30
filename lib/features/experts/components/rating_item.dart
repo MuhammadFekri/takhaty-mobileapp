@@ -38,7 +38,7 @@ class RatingItem extends StatelessWidget {
           9.h.ph,
           Text(
             "is simply dummy text of the printing and typesetting industry is simply dummy text of the printing and typesetting industry",
-            style: StylesManager.textStyle14GreyRegular
+            style: StylesManager.textStyle14GrayRegular
                 .copyWith(color: ColorsManager.grey2Color),
           ),
           4.h.ph,

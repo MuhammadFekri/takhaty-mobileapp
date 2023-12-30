@@ -11,18 +11,11 @@ import 'package:takhaty/core/resources/styles_manager.dart';
 import 'package:takhaty/core/router/routes.dart';
 import 'package:takhaty/features/auth/cubit/auth_cubit.dart';
 
-class VerificationMethodBtmSheet extends StatefulWidget {
+class VerificationMethodBtmSheet extends StatelessWidget {
   const VerificationMethodBtmSheet({
     Key? key,
   }) : super(key: key);
 
-  @override
-  State<VerificationMethodBtmSheet> createState() =>
-      _VerificationMethodBtmSheetState();
-}
-
-class _VerificationMethodBtmSheetState
-    extends State<VerificationMethodBtmSheet> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(

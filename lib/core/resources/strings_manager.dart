@@ -163,4 +163,18 @@ class StringsManager {
   static String relatedLectures = "ندوات ذات صِلة";
   static String more = "المزيد";
   static String placesRemaining = "أماكن متبقية";
+  //حدد إهتمامتك
+  static String selectYourInterests = "حدد إهتماماتك";
+  static String follow = "متابعة";
+  static String following = "متابع";
+  static String comment = "تعليق";
+  static String like = "أعجبنى";
+  static String reply = "رد";
+  static String replies = "ردود";
+  static String theReplies = "الردود";
+  static String addComment = "أضف تعليق";
+  static String writeReply = "أكتب رد";
+  static String writePost = "كتابة منشور";
+  static String postNow = "نشر";
+  static String doYouHaveAQuestionToAsk = "هل لديك سؤالاً لطرحه ؟";
 }

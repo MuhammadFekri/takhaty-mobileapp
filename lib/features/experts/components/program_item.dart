@@ -38,7 +38,7 @@ class ProgramItem extends StatelessWidget {
               12.h.ph,
               Text(
                 "التعافى من الإدمان",
-                style: StylesManager.textStyle14GreyRegular
+                style: StylesManager.textStyle14GrayRegular
                     .copyWith(color: ColorsManager.blackColor),
               ),
               6.h.ph,

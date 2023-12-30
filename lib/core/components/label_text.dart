@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:takhaty/core/resources/colors_manager.dart';
 
-import '../resources/strings_manager.dart';
 import '../resources/styles_manager.dart';
 
 class LabelText extends StatelessWidget {
@@ -29,7 +28,7 @@ class LabelText extends StatelessWidget {
             onTap: subTitleOnTap,
             child: Text(
               subTitle!,
-              style: StylesManager.textStyle14GreyRegular
+              style: StylesManager.textStyle14GrayRegular
                   .copyWith(color: ColorsManager.secondary2),
             ),
           ),
