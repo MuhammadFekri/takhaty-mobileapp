@@ -95,4 +95,5 @@ class StylesManager {
     fontSize: 18.sp,
     fontWeight: FontWeight.w500,
   );
+
 }

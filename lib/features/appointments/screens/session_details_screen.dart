@@ -59,7 +59,11 @@ class SessionDetailsScreen extends StatelessWidget {
                   (index) => const CustomFilterChip(
                         title: 'إضطرابات نفسية',
                       )),
-            )
+            ),
+            24.h.ph,
+
+
+
           ],
         ),
       ),
