@@ -24,7 +24,10 @@ class ExpertDataItem extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SvgPicture.asset(icon),
+          SvgPicture.asset(
+            icon,
+            color: ColorsManager.grey2Color,
+          ),
           4.w.pw,
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,

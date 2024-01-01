@@ -74,4 +74,7 @@ class ImagesManager {
   static const String examChoice = "${path}exam_choice.svg";
   static const String clubForPeople = "${path}club_for_people.svg";
   static const String messageSquare = "${path}messages_square.svg";
+  static const String trainingClass = "${path}training_class.svg";
+  static const String alert = "${path}alert.svg";
+  static const String successCalender = "${path}success_calender.png";
 }

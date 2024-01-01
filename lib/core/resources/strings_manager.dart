@@ -181,4 +181,30 @@ class StringsManager {
   static String writePost = "كتابة منشور";
   static String postNow = "نشر";
   static String doYouHaveAQuestionToAsk = "هل لديك سؤالاً لطرحه ؟";
+  static String all = "الكل";
+  static String trainingPeriod = "مدة التدريب";
+  static String hours = "ساعات";
+  static String dateAndTime = "التاريخ والوقت:";
+  static String trainingLevels = "مراحل التدريب:";
+  static String lectures = "المحاضرات:";
+  static String lecture = "محاضرات";
+  static String courseDetails = "تفاصيل الدورة";
+  static String courseGoals = "أهداف الدورة";
+  static String returnAndCancellationPolicy = "سياسة الإرجاع والإلغاء";
+  static String youCanCancelYourOrder24HoursBeforeTraining =
+      "بإمكانك إلغاء طلبك قبل التدريب ب 24 ساعة";
+  static String courseReservationDetails = "تفاصيل حجز دورة :";
+  static String lecturer = "المُحاضر:";
+  static String lecturePeriod = "مدة الندوة:";
+  static String lecturePresentation = "تقديم الندوة:";
+  static String lectureDetails = "تفاصيل الندوة";
+  static String lectureGoals = "أهداف الندوة";
+  static String youCanCancelYourOrder24HoursBeforeLecture =
+      "بإمكانك إلغاء طلبك قبل الندوة ب 24 ساعة";
+  static String lectureRegistration = "التسجيل فى الندوة";
+  static String backToHome = "العودة للرئيسية";
+  static String registerLectureSuccess =
+      "تم حجز مقعدك فى ندوة التخلص من الإكتئاب بنجاح";
+  static String registerCourseSuccess =
+      "تم حجز مقعدك فى دورة التخلص من الإكتئاب بنجاح";
 }

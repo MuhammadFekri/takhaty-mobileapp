@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:takhaty/core/extensions/extensions_helper.dart';
-import 'package:takhaty/features/categories/components/course_item.dart';
-import 'package:takhaty/features/categories/components/lecture_item.dart';
+import 'package:takhaty/features/categories/components/category_lecture_item.dart';
 
 import '../../../core/components/label_text.dart';
 import '../../../core/components/search_text_field.dart';
 import '../../../core/resources/strings_manager.dart';
 import '../../../core/router/routes.dart';
+import '../../courses/components/course_item.dart';
 import '../../experts/components/top_rated_expert_item.dart';
+import '../../lectures/components/lecture_item.dart';
 
 class Category6Screen extends StatelessWidget {
   const Category6Screen({super.key});
@@ -65,7 +66,7 @@ class Category6Screen extends StatelessWidget {
                   physics: const BouncingScrollPhysics(),
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
-                    return const LectureItem();
+                    return const CategoryLectureItem();
                   },
                   separatorBuilder: (context, index) {
                     return SizedBox(

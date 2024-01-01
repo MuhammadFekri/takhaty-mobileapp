@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:takhaty/core/extensions/extensions_helper.dart';
 import 'package:takhaty/core/resources/images_manager.dart';
+import 'package:takhaty/core/router/routes.dart';
 
 import '../../../core/resources/colors_manager.dart';
 import '../../../core/resources/strings_manager.dart';
@@ -14,7 +15,9 @@ class CourseItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        context.push(AppRouter.courseScreen);
+      },
       child: Card(
         child: Padding(
           padding: EdgeInsets.all(

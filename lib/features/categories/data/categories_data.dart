@@ -26,7 +26,7 @@ class CategoriesData {
     CategoryModel(
         image: categoryImage2,
         title: categoryTitle2,
-        screenRoute: AppRouter.personalizeYourselfScreen),
+        screenRoute: AppRouter.coursesScreen),
     CategoryModel(
         image: categoryImage3,
         title: categoryTitle3,
@@ -38,7 +38,7 @@ class CategoriesData {
     CategoryModel(
         image: categoryImage5,
         title: categoryTitle5,
-        screenRoute: AppRouter.personalizeYourselfScreen),
+        screenRoute: AppRouter.lecturesScreen),
     CategoryModel(
         image: categoryImage6,
         title: categoryTitle6,

@@ -5,6 +5,7 @@ import 'package:takhaty/features/auth/screens/personal_info_screeen.dart';
 import 'package:takhaty/features/auth/screens/register_screen.dart';
 import 'package:takhaty/features/checkout/screens/complete_payment_screen.dart';
 import 'package:takhaty/features/clubs/screens/club_details_screen.dart';
+import 'package:takhaty/features/courses/screens/course_checkout.dart';
 import 'package:takhaty/features/favourites/screens/favourites_screen.dart';
 import 'package:takhaty/features/layout/screens/user_bottom_navigation_screen.dart';
 import 'package:takhaty/features/notification/screens/notification_screen.dart';
@@ -26,7 +27,12 @@ import '../../features/categories/screens/personalize_yourself_screen.dart';
 import '../../features/checkout/screens/checkout.dart';
 import '../../features/clubs/screens/clubs_screen.dart';
 import '../../features/clubs/screens/post_comments_screen.dart';
+import '../../features/courses/screens/course_screen.dart';
+import '../../features/courses/screens/courses_screen.dart';
 import '../../features/experts/screens/expert_details_screen.dart';
+import '../../features/lectures/screens/lecture_register_screen.dart';
+import '../../features/lectures/screens/lecture_screen.dart';
+import '../../features/lectures/screens/lectures_screen.dart';
 import '../../features/search/screens/first_filter_screen.dart';
 import '../../features/search/screens/search_screen.dart';
 import '../../features/search/screens/second_filter_screen.dart';
@@ -71,6 +77,12 @@ class AppRouter {
   static const String clubsScreen = '/clubsScreen';
   static const String clubDetailsScreen = '/clubDetailsScreen';
   static const String postCommentsScreen = '/postCommentsScreen';
+  static const String coursesScreen = '/coursesScreen';
+  static const String courseScreen = '/courseScreen';
+  static const String courseCheckOutScreen = '/CourseCheckOutScreen';
+  static const String lecturesScreen = '/lecturesScreen';
+  static const String lectureScreen = '/lectureScreen';
+  static const String lectureRegisterScreen = '/lectureRegisterScreen';
 
   Route? onGenerateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
@@ -142,6 +154,18 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const ClubDetailsScreen());
       case postCommentsScreen:
         return MaterialPageRoute(builder: (_) => const PostCommentsScreen());
+      case coursesScreen:
+        return MaterialPageRoute(builder: (_) => const CoursesScreen());
+      case courseScreen:
+        return MaterialPageRoute(builder: (_) => const CourseScreen());
+      case courseCheckOutScreen:
+        return MaterialPageRoute(builder: (_) => const CourseCheckOutScreen());
+      case lecturesScreen:
+        return MaterialPageRoute(builder: (_) => const LecturesScreen());
+      case lectureScreen:
+        return MaterialPageRoute(builder: (_) => const LectureScreen());
+      case lectureRegisterScreen:
+        return MaterialPageRoute(builder: (_) => const LectureRegisterScreen());
 
       // endregion
     }

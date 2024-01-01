@@ -5,6 +5,8 @@ import 'package:takhaty/core/resources/colors_manager.dart';
 import 'package:takhaty/core/resources/styles_manager.dart';
 
 import '../../../core/components/default_button.dart';
+import '../../../core/components/success_dialog.dart';
+import '../../../core/components/text_field_with_label.dart';
 import '../../../core/resources/strings_manager.dart';
 
 class CompletePaymentScreen extends StatelessWidget {
@@ -63,12 +65,9 @@ class CompletePaymentScreen extends StatelessWidget {
                     style: StylesManager.textStyle16BlackRegular,
                   ),
                   16.h.ph,
-                  TextFormField(
-                    decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(12),
-                            borderSide: const BorderSide(
-                                color: ColorsManager.hintGreyColor))),
+                  const DefaultTextField(
+                    keyboardType: TextInputType.name,
+                    inputAction: TextInputAction.done,
                   ),
                   24.h.ph,
                   Text(
@@ -76,12 +75,9 @@ class CompletePaymentScreen extends StatelessWidget {
                     style: StylesManager.textStyle16BlackRegular,
                   ),
                   16.h.ph,
-                  TextFormField(
-                    decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(12),
-                            borderSide: const BorderSide(
-                                color: ColorsManager.hintGreyColor))),
+                  const DefaultTextField(
+                    keyboardType: TextInputType.name,
+                    inputAction: TextInputAction.done,
                   ),
                   24.h.ph,
                   Text(
@@ -89,12 +85,9 @@ class CompletePaymentScreen extends StatelessWidget {
                     style: StylesManager.textStyle16BlackRegular,
                   ),
                   16.h.ph,
-                  TextFormField(
-                    decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(12),
-                            borderSide: const BorderSide(
-                                color: ColorsManager.hintGreyColor))),
+                  const DefaultTextField(
+                    keyboardType: TextInputType.name,
+                    inputAction: TextInputAction.done,
                   ),
                   24.h.ph,
                   Text(
@@ -102,19 +95,24 @@ class CompletePaymentScreen extends StatelessWidget {
                     style: StylesManager.textStyle16BlackRegular,
                   ),
                   16.h.ph,
-                  TextFormField(
-                    decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(12),
-                            borderSide: const BorderSide(
-                                color: ColorsManager.hintGreyColor))),
+                  const DefaultTextField(
+                    keyboardType: TextInputType.name,
+                    inputAction: TextInputAction.done,
                   ),
                   24.h.ph,
                 ],
               ),
             ),
             40.h.ph,
-            DefaultButtonWidget(function: () {}, text: StringsManager.payNow),
+            DefaultButtonWidget(
+                function: () {
+                  showDialog(
+                    context: context,
+                    builder: (context) => SuccessDialog(
+                        title: StringsManager.registerCourseSuccess),
+                  );
+                },
+                text: StringsManager.payNow),
             16.h.ph,
           ],
         ),

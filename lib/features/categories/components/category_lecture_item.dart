@@ -8,8 +8,8 @@ import '../../../core/resources/colors_manager.dart';
 import '../../../core/resources/strings_manager.dart';
 import '../../../core/resources/styles_manager.dart';
 
-class LectureItem extends StatelessWidget {
-  const LectureItem({super.key});
+class CategoryLectureItem extends StatelessWidget {
+  const CategoryLectureItem({super.key});
 
   @override
   Widget build(BuildContext context) {

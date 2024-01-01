@@ -7,10 +7,14 @@ import '../../../core/resources/colors_manager.dart';
 class CustomExpertAction extends StatelessWidget {
   final void Function()? onTap;
   final String icon;
+  final double radius;
+  final double padding;
   const CustomExpertAction({
     super.key,
     this.onTap,
     required this.icon,
+    this.radius = 36,
+    this.padding = 8,
   });
 
   @override
@@ -18,14 +22,14 @@ class CustomExpertAction extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        height: 36.h,
-        width: 36.w,
+        height: radius.h,
+        width: radius.w,
         margin: EdgeInsets.only(left: 16.w),
         decoration: const BoxDecoration(
           shape: BoxShape.circle,
           color: ColorsManager.secondary3,
         ),
-        padding: const EdgeInsets.all(8),
+        padding: EdgeInsets.all(padding),
         child: SvgPicture.asset(icon),
       ),
     );
