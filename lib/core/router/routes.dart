@@ -16,6 +16,7 @@ import 'package:takhaty/features/splash/screens/splash_screen.dart';
 import 'package:takhaty/features/wallet/screens/wallet_screen.dart';
 
 import '../../features/appointments/screens/session_details_screen.dart';
+import '../../features/auth/screens/login_screen.dart';
 import '../../features/auth/screens/otp_screen.dart';
 import '../../features/categories/screens/category6_screen.dart';
 import '../../features/categories/screens/exam_result_screen.dart';
@@ -41,6 +42,7 @@ class AppRouter {
   static const String userBottomNavigationScreen =
       '/UserBottomNavigationScreen';
   static const String registerScreen = '/registerScreen';
+  static const String loginScreen = '/loginScreen';
   static const String personalInfoScreen = '/personalInfoScreen';
   static const String searchScreen = '/SearchScreen';
   static const String firstFilterScreen = '/FirstFilterScreen';
@@ -82,6 +84,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const OnboardingScreen());
       case registerScreen:
         return MaterialPageRoute(builder: (_) => const RegisterScreen());
+      case loginScreen:
+        return MaterialPageRoute(builder: (_) => const LoginScreen());
       case searchScreen:
         return MaterialPageRoute(builder: (_) => const SearchScreen());
       case otpScreen:

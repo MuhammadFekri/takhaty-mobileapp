@@ -1,37 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:takhaty/core/components/default_button.dart';
 import 'package:takhaty/core/extensions/extensions_helper.dart';
-import 'package:takhaty/core/resources/colors_manager.dart';
 import 'package:takhaty/core/resources/strings_manager.dart';
 import 'package:takhaty/core/resources/styles_manager.dart';
 import 'package:takhaty/core/router/routes.dart';
 import 'package:takhaty/features/auth/cubit/auth_cubit.dart';
 
 import '../../../core/components/text_field_with_label.dart';
+import '../../../core/resources/colors_manager.dart';
+import '../../../core/resources/images_manager.dart';
 
-class PersonalInfoScreen extends StatefulWidget {
-  const PersonalInfoScreen({super.key});
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
 
   @override
-  State<PersonalInfoScreen> createState() => _PersonalInfoScreenState();
+  State<LoginScreen> createState() => _LoginScreenState();
 }
 
-class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
-  final _nameController = TextEditingController();
+class _LoginScreenState extends State<LoginScreen> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
-  final _confirmPassController = TextEditingController();
   bool acceptMail = false;
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   @override
   void dispose() {
-    _nameController.dispose();
     _emailController.dispose();
     _passwordController.dispose();
-    _confirmPassController.dispose();
     super.dispose();
   }
 
@@ -40,7 +38,7 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          StringsManager.personalInfo,
+          StringsManager.login,
         ),
       ),
       body: SingleChildScrollView(
@@ -51,17 +49,13 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
             return Form(
               key: _formKey,
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  DefaultTextField(
-                    controller: _nameController,
-                    keyboardType: TextInputType.name,
-                    titleText: StringsManager.name,
-                    hintText: StringsManager.enterName,
-                    inputAction: TextInputAction.next,
-                    onChange: (value) {
-                      setState(() {});
-                    },
+                  SvgPicture.asset(ImagesManager.loginVector, height: 180.h),
+                  32.h.ph,
+                  Text(
+                    StringsManager.loginNow,
+                    style: StylesManager.textStyle18BlackSemiBold
+                        .copyWith(fontSize: 20),
                   ),
                   24.h.ph,
                   DefaultTextField(
@@ -91,51 +85,35 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
                       setState(() {});
                     },
                   ),
-                  24.h.ph,
-                  DefaultTextField(
-                    controller: _confirmPassController,
-                    keyboardType: TextInputType.visiblePassword,
-                    obscureText: !cubit.showPassword,
-                    titleText:
-                        "${StringsManager.confirm} ${StringsManager.password}",
-                    inputAction: TextInputAction.done,
-                    suffixIcon: IconButton(
-                      icon: Icon(cubit.showPasswordIcon),
-                      onPressed: () {
-                        cubit.changePasswordVisibility();
-                      },
-                    ),
-                    onChange: (value) {
-                      setState(() {});
-                    },
-                  ),
-                  24.h.ph,
-                  Row(
-                    children: [
-                      Checkbox(
-                        value: acceptMail,
-                        onChanged: (value) {
-                          setState(() {
-                            acceptMail = value!;
-                          });
-                        },
-                      ),
-                      Text(
-                        StringsManager.acceptReceiveMail,
-                        style: StylesManager.textStyle14BlackRegular
-                            .copyWith(color: ColorsManager.grey2Color),
-                      ),
-                    ],
-                  ),
                   64.h.ph,
                   DefaultButtonWidget(
-                      disable: _nameController.text.isEmpty ||
+                      disable: _passwordController.text.isEmpty ||
                           _emailController.text.isEmpty,
                       function: () {
                         context.pushAndRemoveUntil(
                             AppRouter.userBottomNavigationScreen);
                       },
-                      text: StringsManager.saveAndContinue),
+                      text: StringsManager.login),
+                  24.h.ph,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        StringsManager.dontHaveAccount,
+                        style: StylesManager.textStyle14BlackRegular
+                            .copyWith(color: ColorsManager.grey2Color),
+                      ),
+                      TextButton(
+                          onPressed: () {
+                            context.push(AppRouter.registerScreen);
+                          },
+                          child: Text(
+                            StringsManager.registerNow,
+                            style: StylesManager.textStyle14BlackRegular
+                                .copyWith(color: ColorsManager.primaryColor),
+                          )),
+                    ],
+                  ),
                   16.h.ph,
                 ],
               ),

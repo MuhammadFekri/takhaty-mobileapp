@@ -35,8 +35,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       });
   }
 
-  void navigateToRegister() {
-    context.push(AppRouter.registerScreen);
+  void navigateToLogin() {
+    context.push(AppRouter.loginScreen);
   }
 
   void _goToNextPage() {
@@ -47,7 +47,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       );
     } else {
       // Navigate to another screen when onboarding is done
-      navigateToRegister();
+      navigateToLogin();
     }
   }
 
@@ -81,7 +81,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               children: [
                 TextButton(
                     onPressed: () {
-                      navigateToRegister();
+                      navigateToLogin();
                     },
                     child: Text(StringsManager.skip)),
                 GestureDetector(

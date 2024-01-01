@@ -1,6 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_countdown_timer/countdown_timer_controller.dart';
-import 'package:meta/meta.dart';
 
 part 'auth_state.dart';
 
@@ -13,6 +13,18 @@ class AuthCubit extends Cubit<AuthState> {
   void onChangeCountry({required String countryCode}) {
     this.countryCode = countryCode;
     emit(ChangeCountryState());
+  }
+
+  bool showPassword = false;
+
+  IconData showPasswordIcon = Icons.visibility_off_outlined;
+
+  void changePasswordVisibility() {
+    showPassword = !showPassword;
+    showPasswordIcon = showPassword
+        ? Icons.visibility_outlined
+        : Icons.visibility_off_outlined;
+    emit(ChangePasswordVisibilityState());
   }
 
   VerificationMethod? verificationMethod;

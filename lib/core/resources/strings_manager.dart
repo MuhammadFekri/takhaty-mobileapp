@@ -1,5 +1,9 @@
 class StringsManager {
   static String unAuthorized = "غير مصرح";
+  static String login = "تسجيل الدخول";
+  static String registerNow = "سجل الآن";
+  static String dontHaveAccount = "ليس لديك حساب ؟";
+  static String loginNow = "سجل دخولك الآن";
   static String timeOut = "انتهت مهلة الاتصال";
   static String unknown = "غير معروف";
   static String checkInternet = "افحص اتصال الانترنت";
